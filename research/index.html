@@ -3,9 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Research profile of Dr. Rahat Izhar — Requirements Engineering, Software Engineering, Natural Language Processing, Machine Learning and trustworthy AI systems.">
+  <meta name="description" content="Research profile of Dr. Rahat Izhar — Software Engineering, Artificial Intelligence, Requirements Engineering, NLP, trustworthy machine learning and applied intelligent systems.">
   <title>Research | Dr. Rahat Izhar</title>
   <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .profile-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+    .profile-stat{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+    .profile-stat b{display:block;font-size:18px;letter-spacing:-.02em;margin-bottom:5px}
+    .profile-stat span{font-size:12px;color:var(--muted)}
+    .research-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .research-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:24px}
+    .research-card h3{margin:0 0 8px;font-size:21px}
+    .research-card p{margin:0;color:var(--muted)}
+    .research-card .chips{margin-top:16px}
+    .direction-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .direction-card{background:linear-gradient(135deg,var(--surface),color-mix(in srgb,var(--brand) 5%,var(--surface)));border:1px solid var(--line);border-radius:22px;padding:24px}
+    .direction-card h3{font-size:22px;margin:0 0 8px}
+    .direction-card p{margin:0;color:var(--muted)}
+    .domain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .domain-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
+    .domain-card h3{font-size:20px;margin:0 0 8px}
+    .domain-card p{margin:0;color:var(--muted)}
+    .method-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .method-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:24px}
+    .method-card h3{font-size:21px;margin:0 0 8px}
+    .method-card p{color:var(--muted)}
+    @media(max-width:1100px){.research-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:950px){
+      .domain-grid{grid-template-columns:1fr}
+      .direction-grid,.method-grid{grid-template-columns:1fr}
+      .profile-stats{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:600px){.research-grid,.profile-stats{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
 <header class="header">
@@ -33,8 +63,15 @@
 <section class="page-hero">
   <div class="container">
     <span class="eyebrow">Research</span>
-    <h1>Software Engineering, Requirements Engineering and AI</h1>
-    <p>My research focuses on improving software requirements and software-engineering decision support through linguistic, semantic and machine-learning methods. I am particularly interested in approaches that are accurate, interpretable, reproducible and practical enough to support real engineering work.</p>
+    <h1>Software Engineering, AI & Intelligent Systems</h1>
+    <p>My research spans software engineering and artificial intelligence, with a strong foundation in Requirements Engineering and growing work in language intelligence, software analytics, trustworthy machine learning and applied intelligent systems. I am particularly interested in methods that remain reliable, interpretable and useful across real-world domains including software, healthcare, agriculture and operational decision support.</p>
+
+    <div class="profile-stats">
+      <div class="profile-stat"><b>Software Engineering</b><span>Requirements · software analytics · quality</span></div>
+      <div class="profile-stat"><b>AI & Language Intelligence</b><span>NLP · machine learning · LLMs</span></div>
+      <div class="profile-stat"><b>Trustworthy AI</b><span>Robustness · explainability · reproducibility</span></div>
+      <div class="profile-stat"><b>Applied Intelligent Systems</b><span>Healthcare · agriculture · decision support</span></div>
+    </div>
   </div>
 </section>
 
@@ -43,42 +80,53 @@
     <div class="section-head">
       <div>
         <span class="section-kicker">Core Research Areas</span>
-        <h2>Three connected research themes</h2>
-        <p class="section-lead">My work combines software-engineering problems with language technologies and empirical AI evaluation.</p>
+        <h2>A broad agenda connected by intelligent and reliable systems</h2>
+        <p class="section-lead">My work is rooted in Software Engineering, but extends across AI methods and application domains where language, prediction, robustness and decision support play an important role.</p>
       </div>
     </div>
 
-    <div class="grid-3">
-      <article class="card">
-        <span class="card-kicker">Requirements Engineering</span>
-        <h3>Intelligent requirements analysis</h3>
-        <p>Natural-language and semantic methods for improving requirements classification, ambiguity detection, refinement, prioritization, traceability and conflict analysis.</p>
+    <div class="research-grid">
+      <article class="research-card">
+        <span class="card-kicker">Software Engineering</span>
+        <h3>Requirements, software quality & intelligent engineering support</h3>
+        <p>Research on requirements analysis, ambiguity, prioritization, refinement, traceability, semantic quality, software analytics and AI-assisted software-engineering workflows.</p>
         <div class="chips">
           <span class="chip">Requirements Engineering</span>
+          <span class="chip">Software Analytics</span>
+          <span class="chip">Software Quality</span>
+        </div>
+      </article>
+
+      <article class="research-card">
+        <span class="card-kicker">AI & Language Intelligence</span>
+        <h3>NLP, machine learning and LLM-enabled systems</h3>
+        <p>Language-aware and learning-based methods for understanding text, modelling semantic relationships, supporting decisions and improving interactions between humans and software systems.</p>
+        <div class="chips">
           <span class="chip">NLP</span>
-          <span class="chip">Semantic Analysis</span>
-        </div>
-      </article>
-
-      <article class="card">
-        <span class="card-kicker">AI for Software Engineering</span>
-        <h3>Language-aware software intelligence</h3>
-        <p>Machine-learning and representation-learning approaches for analyzing software artefacts, identifying meaningful relationships and supporting engineering decisions.</p>
-        <div class="chips">
-          <span class="chip">Machine Learning</span>
           <span class="chip">Embeddings</span>
-          <span class="chip">Similarity Analysis</span>
+          <span class="chip">LLMs</span>
         </div>
       </article>
 
-      <article class="card">
+      <article class="research-card">
         <span class="card-kicker">Trustworthy AI</span>
-        <h3>Robust and interpretable AI systems</h3>
-        <p>Evaluation-focused research on explainability, robustness, reproducibility and testing of AI-assisted systems in applied settings.</p>
+        <h3>Reliable, explainable and reproducible intelligent systems</h3>
+        <p>Evaluation-focused work on generalization, robustness, explainability, metamorphic testing, reproducibility and failure analysis in AI-enabled systems.</p>
         <div class="chips">
-          <span class="chip">Explainable AI</span>
           <span class="chip">Robustness</span>
+          <span class="chip">Explainability</span>
           <span class="chip">Testing</span>
+        </div>
+      </article>
+
+      <article class="research-card">
+        <span class="card-kicker">Applied AI</span>
+        <h3>Intelligent systems across real-world domains</h3>
+        <p>Applying machine learning, computer vision and decision-support methods to domain problems where reliable interpretation and practical usefulness are as important as predictive performance.</p>
+        <div class="chips">
+          <span class="chip">Healthcare AI</span>
+          <span class="chip">Agricultural AI</span>
+          <span class="chip">Decision Support</span>
         </div>
       </article>
     </div>
@@ -89,44 +137,35 @@
   <div class="container">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Selected Research Directions</span>
-        <h2>Current and recent lines of work</h2>
-        <p class="section-lead">Selected themes from my recent research activity, presented at a high level while detailed experimental artefacts and code are released selectively.</p>
+        <span class="section-kicker">Current & Emerging Directions</span>
+        <h2>Research beyond a single problem type</h2>
+        <p class="section-lead">Recent and ongoing work reflects a broader interest in how intelligent methods behave, generalize and create value across software and applied settings.</p>
       </div>
     </div>
 
-    <div class="grid-3">
-      <article class="card">
-        <span class="card-kicker">Semantic Refinement</span>
-        <h3>Meaning-preserving requirements refinement</h3>
-        <p>Hybrid linguistic and semantic approaches for making natural-language requirements clearer and more consistent while minimizing unintended changes in meaning.</p>
-        <div class="chips">
-          <span class="chip">Linguistic Rules</span>
-          <span class="chip">Sentence Embeddings</span>
-          <span class="chip">Semantic Drift</span>
-        </div>
+    <div class="direction-grid">
+      <article class="direction-card">
+        <span class="card-kicker">Requirements Intelligence</span>
+        <h3>Semantic and language-aware software engineering</h3>
+        <p>Developing methods for requirements classification, ambiguity analysis, refinement, similarity, prioritization and meaning preservation using linguistic, semantic and learning-based approaches.</p>
       </article>
 
-      <article class="card">
-        <span class="card-kicker">Requirements Analytics</span>
-        <h3>Classification, similarity and prioritization</h3>
-        <p>Data-driven pipelines for functional and non-functional requirements analysis, similarity measurement, grouping, prioritization and decision support.</p>
-        <div class="chips">
-          <span class="chip">TF-IDF</span>
-          <span class="chip">Clustering</span>
-          <span class="chip">Classification</span>
-        </div>
+      <article class="direction-card">
+        <span class="card-kicker">Software Analytics</span>
+        <h3>Prediction, evaluation and generalization in software data</h3>
+        <p>Exploring machine-learning approaches for software artefacts and defect-related data, with particular interest in evaluation designs that move beyond convenient random splits toward more realistic generalization.</p>
       </article>
 
-      <article class="card">
-        <span class="card-kicker">AI Reliability</span>
-        <h3>Robustness, explainability and software testing</h3>
-        <p>Empirical evaluation of machine-learning systems using interpretable models, robustness analysis and testing-oriented approaches for dependable AI.</p>
-        <div class="chips">
-          <span class="chip">SHAP</span>
-          <span class="chip">Metamorphic Testing</span>
-          <span class="chip">Empirical Evaluation</span>
-        </div>
+      <article class="direction-card">
+        <span class="card-kicker">LLM-Enabled Software Engineering</span>
+        <h3>From natural-language intent to reliable software behaviour</h3>
+        <p>Investigating how requirements can be clarified, repaired or structured before downstream LLM-based software generation, with emphasis on semantic preservation, reliability and executable correctness.</p>
+      </article>
+
+      <article class="direction-card">
+        <span class="card-kicker">Robust AI Systems</span>
+        <h3>Testing model behaviour under realistic change</h3>
+        <p>Studying whether AI systems remain dependable under altered inputs, distribution shifts and stress conditions using robustness analysis, metamorphic testing, ablation and failure-guided evaluation.</p>
       </article>
     </div>
   </div>
@@ -136,30 +175,63 @@
   <div class="container">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Methods & Toolkit</span>
-        <h2>How I approach research</h2>
-        <p class="section-lead">My work typically combines empirical software engineering with NLP, machine learning and reproducible experimentation.</p>
+        <span class="section-kicker">Application Domains</span>
+        <h2>Intelligent systems across real-world contexts</h2>
+        <p class="section-lead">I am interested in extending rigorous Software Engineering and AI methods into application domains where reliability, interpretation and decision support are particularly important.</p>
       </div>
     </div>
 
-    <div class="grid-2">
-      <article class="card">
+    <div class="domain-grid">
+      <article class="domain-card">
+        <span class="card-kicker">Healthcare & Medical AI</span>
+        <h3>Medical imaging and health-oriented intelligent systems</h3>
+        <p>Research interests include computer vision, image enhancement, data-efficient learning and intelligent methods for analysing complex biomedical and healthcare-related problems.</p>
+      </article>
+
+      <article class="domain-card">
+        <span class="card-kicker">Agriculture & Environmental Intelligence</span>
+        <h3>Robust AI for variable field conditions</h3>
+        <p>An emerging research direction includes robustness evaluation for plant-disease classification and broader intelligent systems designed for changing real-world agricultural environments.</p>
+      </article>
+
+      <article class="domain-card">
+        <span class="card-kicker">Operational Decision Support</span>
+        <h3>Prediction, explanation and actionable recommendations</h3>
+        <p>Applied machine-learning work also extends to operational settings such as logistics and cold-chain risk, where predictive performance, explainability and recovery-oriented decision support must work together.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Methods & Toolkit</span>
+        <h2>How I approach research</h2>
+        <p class="section-lead">My work combines empirical Software Engineering, NLP, machine learning, computer vision and rigorous experimental evaluation.</p>
+      </div>
+    </div>
+
+    <div class="method-grid">
+      <article class="method-card">
         <span class="card-kicker">Methods</span>
-        <h3>Empirical and language-aware analysis</h3>
-        <p>I work with supervised machine learning, semantic similarity, clustering, rule-based linguistic analysis, ablation studies, robustness testing and explainability techniques.</p>
+        <h3>Empirical, semantic and evaluation-driven research</h3>
+        <p>I work with supervised machine learning, semantic similarity, language models, clustering, computer vision, explainability, ablation studies, generalization testing, robustness analysis and metamorphic testing.</p>
         <div class="chips">
           <span class="chip">Classification</span>
           <span class="chip">Semantic Similarity</span>
+          <span class="chip">NLP / LLMs</span>
+          <span class="chip">Computer Vision</span>
           <span class="chip">Ablation</span>
-          <span class="chip">Explainability</span>
           <span class="chip">Robustness Testing</span>
         </div>
       </article>
 
-      <article class="card">
+      <article class="method-card">
         <span class="card-kicker">Technical Stack</span>
         <h3>Research implementation & experimentation</h3>
-        <p>My research workflows are primarily implemented in Python with common NLP, machine-learning, visualization and lightweight application-development tools.</p>
+        <p>My research workflows are primarily implemented in Python using machine-learning, NLP, visualization, explainability and lightweight application-development tools.</p>
         <div class="chips">
           <span class="chip">Python</span>
           <span class="chip">scikit-learn</span>
@@ -173,39 +245,39 @@
   </div>
 </section>
 
-<section class="section band">
+<section class="section">
   <div class="container">
     <div class="section-head">
       <div>
         <span class="section-kicker">Research Principles</span>
-        <h2>What I value in research</h2>
+        <h2>What connects my work</h2>
       </div>
     </div>
 
-    <div class="grid-3">
-      <article class="card">
-        <h3>Reproducibility</h3>
-        <p>Clear data handling, documented workflows, transparent evaluation and enough methodological detail for results to be inspected and extended.</p>
+    <div class="research-grid" style="grid-template-columns:repeat(3,1fr)">
+      <article class="research-card">
+        <h3>Reliability</h3>
+        <p>I am interested in whether methods continue to work beyond convenient experimental settings, including new data conditions, stress cases and domain variation.</p>
       </article>
-      <article class="card">
-        <h3>Meaning preservation</h3>
-        <p>When improving natural-language requirements, better structure or readability should not come at the cost of changing the intended requirement.</p>
+      <article class="research-card">
+        <h3>Interpretability</h3>
+        <p>Strong performance is more useful when researchers and practitioners can understand the evidence, limitations and reasoning behind a system's behaviour.</p>
       </article>
-      <article class="card">
-        <h3>Practical relevance</h3>
-        <p>Research methods should be technically rigorous while remaining interpretable, usable and grounded in realistic software-engineering or AI settings.</p>
+      <article class="research-card">
+        <h3>Practical Impact</h3>
+        <p>I value research that combines methodological rigor with problems that matter in Software Engineering and real-world intelligent-system applications.</p>
       </article>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section band">
   <div class="container">
     <div class="connect-card">
       <div>
         <span class="section-kicker">Research Outputs</span>
-        <h2>Publications, supervision and research code</h2>
-        <p class="section-lead">Explore peer-reviewed publications, current supervision activity and public repositories as they become available.</p>
+        <h2>Publications, supervision and research activity</h2>
+        <p class="section-lead">Explore peer-reviewed publications, current supervision activity and public research repositories as they become available.</p>
       </div>
       <div class="connect-actions">
         <a class="btn primary" href="/publications/">Publications</a>
