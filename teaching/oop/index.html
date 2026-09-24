@@ -1,1 +1,272 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Object-Oriented Programming | Teaching | Dr. Rahat Izhar</title><link rel="stylesheet" href="/assets/css/style.css"></head><body><header class="header"><div class="container nav"><a class="brand" href="/"><span class="brand-mark">RI</span><span>Dr. Rahat Izhar</span></a><nav class="nav-links"><a href="/">Home</a><a href="/about/">About</a><a href="/research/">Research</a><a href="/publications/">Publications</a><a class="active" href="/teaching/">Teaching</a><a href="/supervision/">Supervision</a><a href="/leadership-service/">Leadership & Service</a><a href="/cv/">CV</a><a href="/contact/">Contact</a></nav><div class="nav-actions"><button class="icon-btn" data-theme-toggle>☾</button><button class="menu-btn" data-menu-toggle>☰</button></div></div></header><main><section class="page-hero"><div class="container"><span class="eyebrow">Software Development</span><h1>Object-Oriented Programming</h1><p>A practical object-oriented programming course using Python to develop structured software through classes, inheritance, polymorphism and interface-driven examples.</p><div class="course-meta"><span class="meta-pill">Undergraduate</span><span class="meta-pill">Python</span><span class="meta-pill">OOP</span><span class="meta-pill">Git/GitHub</span></div></div></section><section class="section"><div class="container"><div class="section-head"><div><h2>Weekly teaching map</h2><p class="section-lead">A syllabus-driven view of the course. Material links activate as selected resources are reviewed and published.</p></div></div><div class="week-table"><div class="week-row"><div class="week-num">Week 1</div><div class="week-topic">From procedural thinking to object-oriented design</div><div class="week-res"><span class="resource disabled">Slides</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div></div><div class="week-row"><div class="week-num">Week 2</div><div class="week-topic">Classes, objects, attributes and methods</div><div class="week-res"><span class="resource disabled">Slides</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div></div><div class="week-row"><div class="week-num">Week 3</div><div class="week-topic">__init__, self and object state</div><div class="week-res"><span class="resource disabled">Slides</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div></div><div class="week-row"><div class="week-num">Week 4</div><div class="week-topic">Encapsulation and clean class design</div><div class="week-res"><span class="resource disabled">Slides</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div></div><div class="week-row"><div class="week-num">Week 5</div><div class="week-topic">Inheritance and code reuse</div><div class="week-res"><span class="resource disabled">Slides</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div></div><div class="week-row"><div class="week-num">Week 6</div><div class="week-topic">Polymorphism and method overriding</div><div class="week-res"><span class="resource disabled">Slides</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div></div><div class="week-row"><div class="week-num">Week 7</div><div class="week-topic">Abstraction and reusable interfaces</div><div class="week-res"><span class="resource disabled">Slides</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div></div><div class="week-row"><div class="week-num">Week 8</div><div class="week-topic">Composition and multi-class design</div><div class="week-res"><span class="resource disabled">Slides</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div></div><div class="week-row"><div class="week-num">Week 9</div><div class="week-topic">GUI practice with Tkinter</div><div class="week-res"><span class="resource disabled">Slides</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div></div><div class="week-row"><div class="week-num">Week 10</div><div class="week-topic">Git and GitHub workflow for OOP projects</div><div class="week-res"><span class="resource disabled">Slides</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div></div></div><div class="callout" style="margin-top:24px">Selected watermarked slides, notes and code examples will be added after the resource review pass.</div></div></section></main><footer class="footer"><div class="container footer-grid"><div><strong>Dr. Rahat Izhar</strong><p>Teaching portfolio · Selected educational resources</p></div><div class="footer-links"><a href="/teaching/">All Courses</a><a href="/contact/">Contact</a></div></div></footer><script src="/assets/js/main.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Object-Oriented Programming course page by Dr. Rahat Izhar — actual teaching sequence, learning outcomes and selected resources.">
+  <title>Object-Oriented Programming | Teaching | Dr. Rahat Izhar</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .course-overview{display:grid;grid-template-columns:1.15fr .85fr;gap:18px;align-items:start}
+    .outcome-list{display:grid;gap:10px;margin:16px 0 0;padding:0;list-style:none}
+    .outcome-list li{padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:var(--surface-2);color:var(--muted)}
+    .topic-cloud{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+    .topic-pill{padding:7px 10px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);font-size:12px;font-weight:750;color:var(--muted)}
+    .course-nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+    .resource.disabled{opacity:.72;border-style:dashed}
+    .resource-note{margin-top:22px}
+    .assessment-row{background:color-mix(in srgb,var(--brand) 5%,var(--surface))}
+    .assessment-label{display:inline-flex;padding:6px 9px;border-radius:999px;background:var(--surface-2);color:var(--brand);font-size:11px;font-weight:850;text-transform:uppercase;letter-spacing:.05em}
+    .tool-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
+    .tool-box{padding:15px;border:1px solid var(--line);border-radius:14px;background:var(--surface-2)}
+    .tool-box b{display:block;font-size:14px;margin-bottom:3px}.tool-box span{font-size:12px;color:var(--muted)}
+    .project-note{margin-top:18px;padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--surface-2);color:var(--muted);font-size:14px}
+    @media(max-width:850px){.course-overview{grid-template-columns:1fr}.tool-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:520px){.tool-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="/"><span class="brand-mark">RI</span><span>Dr. Rahat Izhar</span></a>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/research/">Research</a>
+      <a href="/publications/">Publications</a>
+      <a class="active" href="/teaching/">Teaching</a>
+      <a href="/supervision/">Supervision</a>
+      <a href="/leadership-service/">Leadership & Service</a>
+      <a href="/cv/">CV</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle theme">☾</button>
+      <button class="menu-btn" data-menu-toggle aria-label="Open menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Software Development</span>
+    <h1>Object-Oriented Programming</h1>
+    <p>A Python-based course focused on designing structured, reusable and maintainable software through classes, objects and the core principles of object-oriented programming, followed by object relationships, error and file handling, Python object protocols and introductory design patterns.</p>
+
+    <div class="course-meta">
+      <span class="meta-pill">Course ID: IC167911</span>
+      <span class="meta-pill">16 Weeks</span>
+      <span class="meta-pill">Python</span>
+      <span class="meta-pill">Programming Labs</span>
+      <span class="meta-pill">UML</span>
+      <span class="meta-pill">Git / GitHub</span>
+    </div>
+
+    <div class="course-nav">
+      <a class="btn primary" href="#weekly-plan">Weekly Plan</a>
+      <a class="btn" href="#outcomes">Learning Outcomes</a>
+      <a class="btn" href="/teaching/">All Courses</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container course-overview">
+    <article class="card">
+      <span class="card-kicker">Course Overview</span>
+      <h3>From OOP foundations to maintainable Python software</h3>
+      <p>The course starts with the transition from procedural programming to object-oriented thinking and builds through classes, objects, constructors, inheritance, polymorphism, abstraction and encapsulation. Students then study composition, aggregation and UML before applying OOP to exception handling, data persistence, Python dunder methods and introductory software design patterns.</p>
+
+      <div class="topic-cloud">
+        <span class="topic-pill">Classes & Objects</span>
+        <span class="topic-pill">__init__ & self</span>
+        <span class="topic-pill">Inheritance</span>
+        <span class="topic-pill">Polymorphism</span>
+        <span class="topic-pill">Abstraction</span>
+        <span class="topic-pill">Encapsulation</span>
+        <span class="topic-pill">Composition</span>
+        <span class="topic-pill">Aggregation</span>
+        <span class="topic-pill">UML</span>
+        <span class="topic-pill">Exceptions</span>
+        <span class="topic-pill">File Handling</span>
+        <span class="topic-pill">Dunder Methods</span>
+        <span class="topic-pill">Design Patterns</span>
+      </div>
+
+      <div class="tool-grid">
+        <div class="tool-box"><b>Python</b><span>Primary implementation language</span></div>
+        <div class="tool-box"><b>PyCharm / VS Code</b><span>Development and debugging</span></div>
+        <div class="tool-box"><b>UML</b><span>Basic object-oriented design diagrams</span></div>
+        <div class="tool-box"><b>Git / GitHub</b><span>Introductory version-control workflow</span></div>
+      </div>
+
+      <div class="project-note">
+        Applied work includes class-based systems, inheritance and polymorphism practice, a mini ride-booking example, and larger project briefs such as ride-booking and hotel-booking systems that combine OOP with persistence and error handling.
+      </div>
+    </article>
+
+    <article class="card" id="outcomes">
+      <span class="card-kicker">Learning Outcomes</span>
+      <h3>By the end of the course, students should be able to:</h3>
+      <ul class="outcome-list">
+        <li>Explain core Object-Oriented Programming concepts.</li>
+        <li>Design programs using classes and objects.</li>
+        <li>Apply OOP principles to solve real-world problems.</li>
+        <li>Write clean, modular and reusable Python code.</li>
+        <li>Analyze and improve object-oriented program structure.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="section band" id="weekly-plan">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Actual Teaching Sequence</span>
+        <h2>16-week teaching map</h2>
+        <p class="section-lead">This sequence follows the lecture decks, practical materials and project work used in the course. Public links will be activated only after selected materials are reviewed and prepared for release.</p>
+      </div>
+    </div>
+
+    <div class="week-table">
+      <div class="week-row">
+        <div class="week-num">Week 1</div>
+        <div class="week-topic">Procedural programming vs OOP; OOP fundamentals; classes, objects and instances; constructors, <code>__init__</code>, <code>self</code>, attributes and methods</div>
+        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div>
+      </div>
+
+      <div class="week-row">
+        <div class="week-num">Week 2</div>
+        <div class="week-topic">Python inheritance; code reuse; single, multiple, multilevel, hierarchical and hybrid inheritance; method overriding and <code>super()</code></div>
+        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div>
+      </div>
+
+      <div class="week-row">
+        <div class="week-num">Week 3</div>
+        <div class="week-topic">Polymorphism; operator and built-in function behavior; method overloading patterns with default arguments / <code>*args</code> / <code>**kwargs</code>; runtime polymorphism and overriding</div>
+        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Practice</span></div>
+      </div>
+
+      <div class="week-row">
+        <div class="week-num">Week 4</div>
+        <div class="week-topic">Git & GitHub from zero using PyCharm: repositories, clone, status, add, commit, push, pull, README and clean project structure, applied to inheritance and polymorphism practice tasks</div>
+        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Guide PDF</span><span class="resource disabled">Practice</span></div>
+      </div>
+
+      <div class="week-row">
+        <div class="week-num">Week 5</div>
+        <div class="week-topic">Abstraction fundamentals; why abstraction matters; abstract classes and abstract methods; Python <code>abc</code>, <code>ABC</code> and <code>@abstractmethod</code></div>
+        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div>
+      </div>
+
+      <div class="week-row">
+        <div class="week-num">Week 6</div>
+        <div class="week-topic">Abstraction with polymorphism; common interfaces, runtime dispatch, removing conditional logic, abstraction vs inheritance and practical examples</div>
+        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Practice</span></div>
+      </div>
+
+      <div class="week-row">
+        <div class="week-num">Week 7</div>
+        <div class="week-topic">Encapsulation; public, protected and private access conventions; data protection; getters and setters; real-world class examples</div>
+        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div>
+      </div>
+
+      <div class="week-row assessment-row">
+        <div class="week-num">Week 8</div>
+        <div class="week-topic"><span class="assessment-label">Midterm Examination</span></div>
+        <div class="week-res"><span class="resource disabled">No Public Materials</span></div>
+      </div>
+
+      <div class="week-row">
+        <div class="week-num">Week 9</div>
+        <div class="week-topic">Composition and aggregation; inheritance vs composition; strong and weak “has-a” relationships; UML class, object, sequence and use-case diagrams</div>
+        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div>
+      </div>
+
+      <div class="week-row">
+        <div class="week-num">Week 10</div>
+        <div class="week-topic">Composition / aggregation code practice through a mini ride-booking application: Vehicle → Car inheritance, Rider–City aggregation, and Trip composition with Driver, Rider and Car</div>
+        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Practice</span><span class="resource disabled">Code</span></div>
+      </div>
+
+      <div class="week-row">
+        <div class="week-num">Week 11</div>
+        <div class="week-topic">Error handling in Python and OOP: syntax vs runtime errors, <code>try</code>/<code>except</code>, multiple exceptions, <code>finally</code>, <code>raise</code>, built-in and custom exception classes</div>
+        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div>
+      </div>
+
+      <div class="week-row">
+        <div class="week-num">Week 12</div>
+        <div class="week-topic">Data persistence and file handling; text and binary files; read, write, append and create modes; storing, retrieving and updating records; connection with OOP</div>
+        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div>
+      </div>
+
+      <div class="week-row">
+        <div class="week-num">Week 13</div>
+        <div class="week-topic">Practical integration of OOP + file handling + error handling: safe file reading/writing, validation, class-based systems, multiple exceptions and static-method practice</div>
+        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Practice</span><span class="resource disabled">Code</span></div>
+      </div>
+
+      <div class="week-row">
+        <div class="week-num">Week 14</div>
+        <div class="week-topic">Python dunder methods and object protocols: <code>__init__</code>, <code>__str__</code>, operator overloading and making custom objects work naturally with Python operations and built-ins</div>
+        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div>
+      </div>
+
+      <div class="week-row">
+        <div class="week-num">Week 15</div>
+        <div class="week-topic">Introduction to software design patterns: creational, structural and behavioral patterns; reusable solutions including Factory Method, Abstract Factory, Singleton, Builder, Prototype and selected structural / behavioral patterns</div>
+        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div>
+      </div>
+
+      <div class="week-row assessment-row">
+        <div class="week-num">Week 16</div>
+        <div class="week-topic"><span class="assessment-label">Final Examination</span></div>
+        <div class="week-res"><span class="resource disabled">No Public Materials</span></div>
+      </div>
+    </div>
+
+    <div class="callout resource-note">
+      Public materials will be selective. Lecture slides will be converted to watermarked PDFs before publication; selected notes, guides and code examples may be added where useful. Examinations, answer keys, student submissions, project solutions and original editable slide decks will remain private.
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="connect-card">
+      <div>
+        <span class="section-kicker">Course Navigation</span>
+        <h2>Continue through the teaching portfolio</h2>
+        <p class="section-lead">Explore related programming, algorithms and software-development courses.</p>
+      </div>
+      <div class="connect-actions">
+        <a class="btn primary" href="/teaching/data-structures-algorithms/">Data Structures & Algorithms</a>
+        <a class="btn" href="/teaching/basic-programming/">Basic Programming</a>
+        <a class="btn" href="/teaching/">All Courses</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>Dr. Rahat Izhar</strong>
+      <p>Teaching portfolio · Selected educational resources</p>
+    </div>
+    <div class="footer-links">
+      <a href="/teaching/">All Courses</a>
+      <a href="/research/">Research</a>
+      <a href="/cv/">CV</a>
+      <a href="/contact/">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
