@@ -38,10 +38,14 @@
     .tool-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px}
     .tool-card b{display:block;margin-bottom:6px}
     .tool-card span{font-size:13px;color:var(--muted)}
+    .resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .resource-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
+    .resource-card h3{font-size:19px;margin:0 0 7px}
+    .resource-card p{margin:0;color:var(--muted)}
     @media(max-width:900px){
       .profile-stats,.tool-grid{grid-template-columns:repeat(2,1fr)}
       .course-overview,.phase-grid{grid-template-columns:1fr}
-      .approach-grid{grid-template-columns:1fr}
+      .approach-grid,.resource-grid{grid-template-columns:1fr}
       .project-grid{grid-template-columns:1fr}
     }
     @media(max-width:520px){.profile-stats,.tool-grid{grid-template-columns:1fr}}
@@ -122,6 +126,158 @@
     </article>
   </div>
 </section>
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Teaching Approach</span>
+        <h2>From concept to software design</h2>
+        <p class="section-lead">I teach each OOP idea as a design decision: first why it exists, then how it behaves, and finally how it changes the structure of a real program.</p>
+      </div>
+    </div>
+
+    <div class="approach-grid">
+      <article class="approach-card">
+        <div class="step">01 · Understand</div>
+        <h3>Build the mental model</h3>
+        <p>Concepts are introduced through clear comparisons, real-world analogies and small class-based examples before students write larger programs.</p>
+      </article>
+      <article class="approach-card">
+        <div class="step">02 · Implement</div>
+        <h3>Move immediately into Python</h3>
+        <p>Live examples and guided practice connect terminology to constructors, methods, inheritance hierarchies, abstract interfaces and object relationships.</p>
+      </article>
+      <article class="approach-card">
+        <div class="step">03 · Design</div>
+        <h3>Combine concepts in systems</h3>
+        <p>Students progress from isolated OOP features to multi-class applications where design, persistence, error handling and maintainability work together.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Curriculum Architecture</span>
+        <h2>Course learning pathway</h2>
+        <p class="section-lead">The public portfolio groups the taught material into four academic phases rather than reproducing internal timetable or assessment details.</p>
+      </div>
+    </div>
+
+    <div class="phase-grid">
+      <article class="phase-card">
+        <div class="phase-no">01</div>
+        <h3>Object-Oriented Foundations</h3>
+        <p>Establishing the transition from procedural programming to class-based software design.</p>
+        <ul class="phase-list">
+          <li>Procedural programming vs OOP</li>
+          <li>Classes, objects and instances</li>
+          <li>Constructors, <code>__init__</code> and <code>self</code></li>
+          <li>Attributes, methods and object state</li>
+          <li>Inheritance, overriding and <code>super()</code></li>
+          <li>Polymorphism and flexible method behaviour</li>
+        </ul>
+      </article>
+
+      <article class="phase-card">
+        <div class="phase-no">02</div>
+        <h3>Core OOP Principles</h3>
+        <p>Developing stronger control over interfaces, implementation details and object state.</p>
+        <ul class="phase-list">
+          <li>Abstraction with abstract classes and methods</li>
+          <li><code>ABC</code> and <code>@abstractmethod</code></li>
+          <li>Abstraction working with polymorphism</li>
+          <li>Encapsulation and controlled access</li>
+          <li>Public, protected and private conventions</li>
+          <li>Getters, setters and data protection</li>
+        </ul>
+      </article>
+
+      <article class="phase-card">
+        <div class="phase-no">03</div>
+        <h3>Object Relationships & Modelling</h3>
+        <p>Moving from individual classes to software structures composed of collaborating objects.</p>
+        <ul class="phase-list">
+          <li>Inheritance vs composition</li>
+          <li>Composition and strong ownership</li>
+          <li>Aggregation and independent object lifecycles</li>
+          <li>UML for visualising object-oriented design</li>
+          <li>Class, object, sequence and use-case diagrams</li>
+          <li>Git/GitHub workflows for organized development</li>
+        </ul>
+      </article>
+
+      <article class="phase-card">
+        <div class="phase-no">04</div>
+        <h3>Reliable & Pythonic Software</h3>
+        <p>Extending OOP into practical software concerns and reusable design techniques.</p>
+        <ul class="phase-list">
+          <li>Exception handling and custom exceptions</li>
+          <li>File handling and persistent data</li>
+          <li>Combining classes, files and error handling</li>
+          <li>Static-method practice in class-based systems</li>
+          <li>Python dunder methods and operator behaviour</li>
+          <li>Creational, structural and behavioural design patterns</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Applied Learning</span>
+        <h2>From isolated concepts to realistic software scenarios</h2>
+        <p class="section-lead">Practical work is used to show how object-oriented ideas interact inside larger systems rather than remaining separate textbook definitions.</p>
+      </div>
+    </div>
+
+    <div class="project-grid">
+      <article class="project-card">
+        <span class="card-kicker">Applied System Design</span>
+        <h3>Ride Booking System</h3>
+        <p>A multi-class software scenario used to bring together inheritance, composition, aggregation, encapsulation, persistent records and exception handling.</p>
+        <div class="project-focus">
+          <span>Inheritance</span><span>Composition</span><span>Aggregation</span><span>Persistence</span><span>Error Handling</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <span class="card-kicker">Applied System Design</span>
+        <h3>Hotel Booking System</h3>
+        <p>A booking workflow used to connect classes and objects with composition, encapsulated state, file-based persistence and robust input handling.</p>
+        <div class="project-focus">
+          <span>Classes & Objects</span><span>Composition</span><span>Encapsulation</span><span>Files</span><span>Validation</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Tools & Practice</span>
+        <h2>Development environment</h2>
+      </div>
+    </div>
+
+    <div class="tool-grid">
+      <article class="tool-card"><b>Python</b><span>Core language for all OOP implementation.</span></article>
+      <article class="tool-card"><b>PyCharm / VS Code</b><span>Development, debugging and project organization.</span></article>
+      <article class="tool-card"><b>Jupyter / Colab</b><span>Supporting environments for examples and experimentation.</span></article>
+      <article class="tool-card"><b>UML + Git/GitHub</b><span>Design visualization and introductory version-control practice.</span></article>
+    </div>
+  </div>
+</section>
+
+
 
 <section class="section">
   <div class="container">

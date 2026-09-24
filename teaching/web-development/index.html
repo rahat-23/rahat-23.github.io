@@ -43,10 +43,15 @@
     .tool-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px}
     .tool-card b{display:block;margin-bottom:6px}
     .tool-card span{font-size:13px;color:var(--muted)}
+    .resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .resource-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
+    .resource-card h3{font-size:19px;margin:0 0 7px}
+    .resource-card p{margin:0;color:var(--muted)}
     @media(max-width:1050px){.approach-grid,.project-journey{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:900px){
       .profile-stats,.tool-grid{grid-template-columns:repeat(2,1fr)}
       .course-overview,.phase-grid{grid-template-columns:1fr}
+      .resource-grid{grid-template-columns:1fr}
     }
     @media(max-width:580px){
       .profile-stats,.tool-grid,.approach-grid,.project-journey{grid-template-columns:1fr}
@@ -131,6 +136,199 @@
     </article>
   </div>
 </section>
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Teaching Approach</span>
+        <h2>Structure → style → adapt → publish</h2>
+        <p class="section-lead">Students build continuously. Each new concept improves an existing page or project so that web-development skills accumulate into a complete website rather than remaining isolated exercises.</p>
+      </div>
+    </div>
+
+    <div class="approach-grid">
+      <article class="approach-card">
+        <div class="step">01 · Structure</div>
+        <h3>Build meaningful content</h3>
+        <p>Students begin with semantic HTML, page structure, navigation, images, forms and organized project folders.</p>
+      </article>
+      <article class="approach-card">
+        <div class="step">02 · Style</div>
+        <h3>Develop visual hierarchy</h3>
+        <p>CSS, typography, the box model and layout techniques are applied to turn raw pages into coherent user interfaces.</p>
+      </article>
+      <article class="approach-card">
+        <div class="step">03 · Adapt</div>
+        <h3>Design for different users and screens</h3>
+        <p>Responsive layouts, Flexbox, Grid, accessibility and usability principles strengthen the quality of the student-built websites.</p>
+      </article>
+      <article class="approach-card">
+        <div class="step">04 · Publish</div>
+        <h3>Move from classroom work to the web</h3>
+        <p>Students refine performance, basic SEO and project quality before deploying a completed website through GitHub Pages.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Curriculum Architecture</span>
+        <h2>Course learning pathway</h2>
+        <p class="section-lead">The public portfolio presents the course as a progression in web-development capability rather than reproducing weekly assessment and submission details.</p>
+      </div>
+    </div>
+
+    <div class="phase-grid">
+      <article class="phase-card">
+        <div class="phase-no">01</div>
+        <h3>Web & HTML Foundations</h3>
+        <p>Understanding how web projects are structured and how meaningful content is represented.</p>
+        <ul class="phase-list">
+          <li>How the web works and roles in web development</li>
+          <li>Development tools and project structure</li>
+          <li>HTML document structure and metadata</li>
+          <li>Semantic elements, headings and paragraphs</li>
+          <li>Internal and external links</li>
+          <li>Images, alternative text, lists, tables and forms</li>
+        </ul>
+      </article>
+
+      <article class="phase-card">
+        <div class="phase-no">02</div>
+        <h3>CSS & Visual Design</h3>
+        <p>Turning semantic content into readable, organized and visually coherent interfaces.</p>
+        <ul class="phase-list">
+          <li>CSS syntax and selectors</li>
+          <li>Box model, colors and fonts</li>
+          <li>Positioning and layout foundations</li>
+          <li>Typography and advanced text styling</li>
+          <li>Hover states and pseudo-classes</li>
+          <li>Progression toward portfolio-style pages</li>
+        </ul>
+      </article>
+
+      <article class="phase-card">
+        <div class="phase-no">03</div>
+        <h3>Responsive Layout & Accessibility</h3>
+        <p>Designing interfaces that remain usable across screen sizes and user needs.</p>
+        <ul class="phase-list">
+          <li>Viewport and fluid design concepts</li>
+          <li>Media queries</li>
+          <li>Flexbox layout and responsive navigation</li>
+          <li>CSS Grid and combined Grid/Flexbox layouts</li>
+          <li>Accessibility principles and ARIA basics</li>
+          <li>WCAG awareness and usability review</li>
+        </ul>
+      </article>
+
+      <article class="phase-card">
+        <div class="phase-no">04</div>
+        <h3>Interaction, Media & Motion</h3>
+        <p>Adding controlled interactivity and richer presentation without losing usability.</p>
+        <ul class="phase-list">
+          <li>Advanced form inputs and validation concepts</li>
+          <li>Introduction to JavaScript</li>
+          <li>CSS transitions and keyframe animations</li>
+          <li>Hover interactions</li>
+          <li>Audio, video and iframe embedding</li>
+          <li>Inline SVG and media-rich pages</li>
+        </ul>
+      </article>
+
+      <article class="phase-card" style="grid-column:1/-1">
+        <div class="phase-no">05</div>
+        <h3>Project Refinement & Deployment</h3>
+        <p>Bringing the technical and design strands together into a finished public website.</p>
+        <ul class="phase-list">
+          <li>Integrated responsive and accessible project development</li>
+          <li>Project planning and iterative refinement</li>
+          <li>Performance-oriented improvements</li>
+          <li>SEO fundamentals</li>
+          <li>GitHub Pages deployment</li>
+          <li>Presentation of completed website work</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Student Project Development</span>
+        <h2>From the first HTML page to a deployed website</h2>
+        <p class="section-lead">Project work develops incrementally across the course, allowing students to see a website evolve as new technical and design skills are introduced.</p>
+      </div>
+    </div>
+
+    <div class="project-journey">
+      <article class="journey-card">
+        <div class="journey-step">Stage 01</div>
+        <h3>Build the structure</h3>
+        <p>Students create basic pages, then extend them into multi-page websites with links, images and organized content.</p>
+      </article>
+      <article class="journey-card">
+        <div class="journey-step">Stage 02</div>
+        <h3>Develop the visual system</h3>
+        <p>Existing pages are styled using CSS, typography and layout techniques, including portfolio-style interfaces.</p>
+      </article>
+      <article class="journey-card">
+        <div class="journey-step">Stage 03</div>
+        <h3>Improve the experience</h3>
+        <p>Projects are adapted for responsive layouts, accessible interaction, forms, media and controlled animation.</p>
+      </article>
+      <article class="journey-card">
+        <div class="journey-step">Stage 04</div>
+        <h3>Publish the website</h3>
+        <p>Students refine their final work, consider performance and SEO basics, and deploy a live version using GitHub Pages.</p>
+      </article>
+    </div>
+
+    <div class="student-work">
+      <div class="student-work-head">
+        <div>
+          <span class="card-kicker">Project-Based Teaching</span>
+          <h3>Students create complete web experiences</h3>
+          <p>The project pathway connects individual technical exercises to a larger design outcome. Rather than treating HTML, CSS, responsiveness, accessibility and deployment as separate topics, students apply them progressively to websites they build throughout the course.</p>
+        </div>
+      </div>
+      <div class="work-tags">
+        <span>Multi-page Websites</span>
+        <span>Portfolio Interfaces</span>
+        <span>Responsive Navigation</span>
+        <span>Grid Layouts</span>
+        <span>Accessible Forms</span>
+        <span>Media-rich Pages</span>
+        <span>GitHub Pages Deployment</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Tools & Practice</span>
+        <h2>Front-end development environment</h2>
+      </div>
+    </div>
+
+    <div class="tool-grid">
+      <article class="tool-card"><b>HTML5</b><span>Semantic structure, content organization and web forms.</span></article>
+      <article class="tool-card"><b>CSS3</b><span>Styling, responsive layouts, transitions and animation.</span></article>
+      <article class="tool-card"><b>JavaScript Foundations</b><span>Introductory interactivity and form-related behaviour.</span></article>
+      <article class="tool-card"><b>GitHub Pages</b><span>Publishing completed student web projects to the live web.</span></article>
+    </div>
+  </div>
+</section>
+
+
 
 <section class="section">
   <div class="container">

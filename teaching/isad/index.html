@@ -44,12 +44,16 @@
     .tool-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px}
     .tool-card b{display:block;margin-bottom:6px}
     .tool-card span{font-size:13px;color:var(--muted)}
+    .resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .resource-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
+    .resource-card h3{font-size:19px;margin:0 0 7px}
+    .resource-card p{margin:0;color:var(--muted)}
     @media(max-width:1100px){.approach-grid{grid-template-columns:repeat(3,1fr)}}
     @media(max-width:900px){
       .profile-stats,.tool-grid{grid-template-columns:repeat(2,1fr)}
       .course-overview,.phase-grid{grid-template-columns:1fr}
       .phase-card.wide{grid-column:auto}
-      .case-grid{grid-template-columns:1fr}
+      .case-grid,.resource-grid{grid-template-columns:1fr}
     }
     @media(max-width:650px){.approach-grid{grid-template-columns:1fr}}
     @media(max-width:520px){.profile-stats,.tool-grid{grid-template-columns:1fr}}
@@ -132,6 +136,205 @@
     </article>
   </div>
 </section>
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Teaching Approach</span>
+        <h2>Understand → analyse → specify → model → validate</h2>
+        <p class="section-lead">The course is taught through structured explanations, real organizational cases, analytical exercises and system-modelling practice so students learn to justify each stage of an information-system solution.</p>
+      </div>
+    </div>
+
+    <div class="approach-grid">
+      <article class="approach-card">
+        <div class="step">01 · Understand</div>
+        <h3>Study the organization</h3>
+        <p>Students first identify the system context, actors, processes and business problem before proposing change.</p>
+      </article>
+      <article class="approach-card">
+        <div class="step">02 · Analyse</div>
+        <h3>Evaluate the problem</h3>
+        <p>Scope, feasibility, stakeholders and competing needs are examined through structured case analysis.</p>
+      </article>
+      <article class="approach-card">
+        <div class="step">03 · Specify</div>
+        <h3>Refine requirements</h3>
+        <p>Informal needs are translated into clearer functional and non-functional requirements while ambiguity and conflicts are examined.</p>
+      </article>
+      <article class="approach-card">
+        <div class="step">04 · Model</div>
+        <h3>Visualise system flow</h3>
+        <p>Context Diagrams and Level-0 DFDs are used to represent processes, external entities, data stores and data movement.</p>
+      </article>
+      <article class="approach-card">
+        <div class="step">05 · Validate</div>
+        <h3>Question system quality</h3>
+        <p>Verification, validation, test cases and defect analysis are introduced to connect system analysis with quality assurance.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Curriculum Architecture</span>
+        <h2>Course learning pathway</h2>
+        <p class="section-lead">The public portfolio groups the course into analytical capabilities rather than reproducing internal schedules, examination weeks or administrative course details.</p>
+      </div>
+    </div>
+
+    <div class="phase-grid">
+      <article class="phase-card">
+        <div class="phase-no">01</div>
+        <h3>Systems Thinking & SDLC</h3>
+        <p>Understanding organizations as systems and why structured development processes are needed.</p>
+        <ul class="phase-list">
+          <li>Information systems and organizational systems</li>
+          <li>System components, types and characteristics</li>
+          <li>Problems with ad-hoc development</li>
+          <li>System Development Life Cycle</li>
+          <li>Planning, analysis, design and implementation phases</li>
+          <li>Real-world system-development scenarios</li>
+        </ul>
+      </article>
+
+      <article class="phase-card">
+        <div class="phase-no">02</div>
+        <h3>Feasibility & Requirements Engineering</h3>
+        <p>Moving from a business problem to a feasible and clearly specified system scope.</p>
+        <ul class="phase-list">
+          <li>Problem statements and scope definition</li>
+          <li>Technical, economic and operational feasibility</li>
+          <li>Stakeholder and requirement analysis</li>
+          <li>Ambiguous and conflicting requirements</li>
+          <li>Functional and non-functional requirements</li>
+          <li>Requirement structuring and quality evaluation</li>
+        </ul>
+      </article>
+
+      <article class="phase-card">
+        <div class="phase-no">03</div>
+        <h3>Process Modelling with DFDs</h3>
+        <p>Representing system boundaries, processes and data movement through structured models.</p>
+        <ul class="phase-list">
+          <li>Process-modelling concepts</li>
+          <li>DFD symbols, rules and notation</li>
+          <li>Context Diagrams</li>
+          <li>Level-0 Data Flow Diagrams</li>
+          <li>Processes, data stores and external entities</li>
+          <li>Data-flow validation and model review</li>
+        </ul>
+      </article>
+
+      <article class="phase-card">
+        <div class="phase-no">04</div>
+        <h3>Testing & System Quality</h3>
+        <p>Connecting analysis and design decisions with verification, validation and dependable system behaviour.</p>
+        <ul class="phase-list">
+          <li>Introduction to system testing</li>
+          <li>Verification versus validation</li>
+          <li>Unit, integration, system and acceptance testing</li>
+          <li>Functional, negative and edge testing</li>
+          <li>Test cases and defect reporting</li>
+          <li>Boundary-oriented testing scenarios</li>
+        </ul>
+      </article>
+
+      <article class="phase-card wide">
+        <div class="phase-no">05</div>
+        <h3>Integrated System Analysis</h3>
+        <p>Bringing together the full analytical process through project-based work on realistic organizational systems.</p>
+        <ul class="phase-list">
+          <li>System problem identification and scope definition</li>
+          <li>Feasibility analysis</li>
+          <li>Requirement specification and refinement</li>
+          <li>Context Diagram and DFD development</li>
+          <li>Testing considerations and quality discussion</li>
+          <li>Presentation and justification of the proposed analysis</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Case-Based & Project Learning</span>
+        <h2>Analysing real organizational systems</h2>
+        <p class="section-lead">Students work with recognizable organizational scenarios so that requirements, process models and testing concepts are connected to realistic business problems rather than studied in isolation.</p>
+      </div>
+    </div>
+
+    <div class="case-grid">
+      <article class="case-card">
+        <span class="card-kicker">Business Analysis</span>
+        <h3>Define the problem before the solution</h3>
+        <p>Students identify system problems, establish scope and evaluate whether a proposed system is technically, economically and operationally feasible.</p>
+        <div class="case-focus">
+          <span>Problem Statement</span><span>Scope</span><span>Feasibility</span>
+        </div>
+      </article>
+
+      <article class="case-card">
+        <span class="card-kicker">Requirements Analysis</span>
+        <h3>Turn stakeholder needs into structured requirements</h3>
+        <p>Exercises focus on ambiguity, conflicting expectations, requirement quality and the distinction between functional and non-functional requirements.</p>
+        <div class="case-focus">
+          <span>Stakeholders</span><span>Ambiguity</span><span>Conflicts</span><span>FR / NFR</span>
+        </div>
+      </article>
+
+      <article class="case-card">
+        <span class="card-kicker">System Modelling</span>
+        <h3>Represent the system visually</h3>
+        <p>Students create and review Context Diagrams and Level-0 DFDs to communicate boundaries, processes, data stores and information flow.</p>
+        <div class="case-focus">
+          <span>Context Diagram</span><span>Level-0 DFD</span><span>Data Flow</span><span>Validation</span>
+        </div>
+      </article>
+    </div>
+
+    <div class="system-showcase">
+      <span class="card-kicker">Project Contexts</span>
+      <h3>Systems used for analytical project work</h3>
+      <p>Project and classroom scenarios draw from a range of organizational domains so students can apply the same structured analysis process to different operational contexts.</p>
+      <div class="system-tags">
+        <span>University Management</span>
+        <span>Banking</span>
+        <span>Hospital Management</span>
+        <span>Airline Reservation</span>
+        <span>E-commerce</span>
+        <span>Inventory Management</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Methods & Learning Media</span>
+        <h2>Analytical learning environment</h2>
+      </div>
+    </div>
+
+    <div class="tool-grid">
+      <article class="tool-card"><b>Case Studies</b><span>Realistic organizational scenarios for structured analysis and decision making.</span></article>
+      <article class="tool-card"><b>DFD Modelling</b><span>Context Diagrams and Level-0 DFDs for process and data-flow representation.</span></article>
+      <article class="tool-card"><b>Requirements Exercises</b><span>Ambiguity, conflicts, functional/non-functional requirements and specification quality.</span></article>
+      <article class="tool-card"><b>Testing Scenarios</b><span>Verification, validation, test cases, defect analysis and edge conditions.</span></article>
+    </div>
+  </div>
+</section>
+
+
 
 <section class="section">
   <div class="container">

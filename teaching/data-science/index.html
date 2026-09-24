@@ -44,12 +44,16 @@
     .tool-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px}
     .tool-card b{display:block;margin-bottom:6px}
     .tool-card span{font-size:13px;color:var(--muted)}
+    .resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .resource-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
+    .resource-card h3{font-size:19px;margin:0 0 7px}
+    .resource-card p{margin:0;color:var(--muted)}
     @media(max-width:1100px){.approach-grid{grid-template-columns:repeat(3,1fr)}}
     @media(max-width:900px){
       .profile-stats,.tool-grid{grid-template-columns:repeat(2,1fr)}
       .course-overview,.phase-grid{grid-template-columns:1fr}
       .phase-card.wide{grid-column:auto}
-      .case-grid{grid-template-columns:1fr}
+      .case-grid,.resource-grid{grid-template-columns:1fr}
     }
     @media(max-width:650px){.approach-grid{grid-template-columns:1fr}}
     @media(max-width:520px){.profile-stats,.tool-grid{grid-template-columns:1fr}}
@@ -132,6 +136,207 @@
     </article>
   </div>
 </section>
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Teaching Approach</span>
+        <h2>Understand → prepare → explore → test → communicate</h2>
+        <p class="section-lead">Students work through an analytical workflow in which data quality, statistical reasoning, coding and interpretation are treated as connected parts of the same problem-solving process.</p>
+      </div>
+    </div>
+
+    <div class="approach-grid">
+      <article class="approach-card">
+        <div class="step">01 · Understand</div>
+        <h3>Read the data context</h3>
+        <p>Students begin by identifying what the data represents, how it was generated and what questions can reasonably be asked of it.</p>
+      </article>
+      <article class="approach-card">
+        <div class="step">02 · Prepare</div>
+        <h3>Improve data quality</h3>
+        <p>Missing, inconsistent and invalid values are examined before analysis so students understand why preparation affects conclusions.</p>
+      </article>
+      <article class="approach-card">
+        <div class="step">03 · Explore</div>
+        <h3>Find patterns and relationships</h3>
+        <p>Summary statistics, distributions and visualizations are used to build an evidence-based understanding of the dataset.</p>
+      </article>
+      <article class="approach-card">
+        <div class="step">04 · Test</div>
+        <h3>Evaluate statistical evidence</h3>
+        <p>Hypotheses, p-values and appropriate statistical tests are used to move from observation toward analytical decision making.</p>
+      </article>
+      <article class="approach-card">
+        <div class="step">05 · Communicate</div>
+        <h3>Explain the result</h3>
+        <p>Students interpret findings through visualizations, analytical explanations and dataset-based presentations rather than reporting numbers alone.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Curriculum Architecture</span>
+        <h2>Course learning pathway</h2>
+        <p class="section-lead">The public portfolio groups the course into analytical capabilities rather than reproducing internal schedules, grading or examination details.</p>
+      </div>
+    </div>
+
+    <div class="phase-grid">
+      <article class="phase-card">
+        <div class="phase-no">01</div>
+        <h3>Data Foundations & Quality</h3>
+        <p>Establishing how data is created, represented and prepared before analysis begins.</p>
+        <ul class="phase-list">
+          <li>Data Science and Data Analytics foundations</li>
+          <li>Data versus information versus insight</li>
+          <li>Types of data and the data life cycle</li>
+          <li>Real-world data generation</li>
+          <li>Missing, inconsistent, biased and noisy data</li>
+          <li>Cleaning and basic imputation strategies</li>
+        </ul>
+      </article>
+
+      <article class="phase-card">
+        <div class="phase-no">02</div>
+        <h3>Exploratory & Descriptive Analysis</h3>
+        <p>Developing an initial understanding of a dataset through summaries, distributions and visual evidence.</p>
+        <ul class="phase-list">
+          <li>Exploratory Data Analysis</li>
+          <li>Feature and target variables</li>
+          <li>Dataset summaries and distributions</li>
+          <li>Measures of central tendency</li>
+          <li>Measures of dispersion</li>
+          <li>Histograms, boxplots and univariate interpretation</li>
+        </ul>
+      </article>
+
+      <article class="phase-card">
+        <div class="phase-no">03</div>
+        <h3>Relationships & Statistical Evidence</h3>
+        <p>Moving from descriptive patterns to questions about association and statistical significance.</p>
+        <ul class="phase-list">
+          <li>Numerical versus numerical analysis</li>
+          <li>Scatter plots and correlation</li>
+          <li>Positive and negative relationships</li>
+          <li>Pearson correlation</li>
+          <li>Population versus sample</li>
+          <li>Null and alternative hypotheses</li>
+          <li>p-values, significance and Type I / Type II errors</li>
+        </ul>
+      </article>
+
+      <article class="phase-card">
+        <div class="phase-no">04</div>
+        <h3>Comparative Statistical Testing</h3>
+        <p>Using appropriate tests to evaluate categorical relationships and differences between groups.</p>
+        <ul class="phase-list">
+          <li>Contingency tables and expected frequencies</li>
+          <li>Chi-Square testing</li>
+          <li>One-sample t-tests</li>
+          <li>Independent t-tests</li>
+          <li>Paired t-tests</li>
+          <li>ANOVA and comparison of multiple groups</li>
+          <li>Statistical decision making and interpretation</li>
+        </ul>
+      </article>
+
+      <article class="phase-card wide">
+        <div class="phase-no">05</div>
+        <h3>Python Analytics & Integrated Data Projects</h3>
+        <p>Bringing data preparation, exploration, statistical reasoning and communication together through practical analysis.</p>
+        <ul class="phase-list">
+          <li>Pandas DataFrames and Series</li>
+          <li>NumPy foundations</li>
+          <li>Selection, filtering and cleaning with Python</li>
+          <li>Summary statistics and visual analysis</li>
+          <li>Dataset-based analytical workflows</li>
+          <li>Interpretation and presentation of findings</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Dataset-Based Learning</span>
+        <h2>Analysing real data rather than abstract examples alone</h2>
+        <p class="section-lead">Classroom activities and projects use varied datasets so students can see how the same analytical principles behave across different real-world contexts.</p>
+      </div>
+    </div>
+
+    <div class="case-grid">
+      <article class="case-card">
+        <span class="card-kicker">Data Preparation</span>
+        <h3>Inspect and clean imperfect data</h3>
+        <p>Students identify missing, inconsistent and invalid values, then make justified preparation decisions before continuing with analysis.</p>
+        <div class="case-focus">
+          <span>Missing Values</span><span>Imputation</span><span>Consistency</span><span>Quality</span>
+        </div>
+      </article>
+
+      <article class="case-card">
+        <span class="card-kicker">Statistical Analysis</span>
+        <h3>Choose analysis based on the question</h3>
+        <p>Correlation, chi-square, t-tests and ANOVA are connected to the type of variables, comparison being made and evidence required.</p>
+        <div class="case-focus">
+          <span>Correlation</span><span>Chi-Square</span><span>T-Tests</span><span>ANOVA</span>
+        </div>
+      </article>
+
+      <article class="case-card">
+        <span class="card-kicker">Analytical Communication</span>
+        <h3>Turn results into an explanation</h3>
+        <p>Projects require students to combine cleaning, EDA, visualization and statistical interpretation into a coherent analytical presentation.</p>
+        <div class="case-focus">
+          <span>EDA</span><span>Visualization</span><span>Interpretation</span><span>Presentation</span>
+        </div>
+      </article>
+    </div>
+
+    <div class="dataset-showcase">
+      <span class="card-kicker">Example Dataset Contexts</span>
+      <h3>Real-world analytical scenarios</h3>
+      <p>Teaching and project activities draw on datasets from several domains to broaden students' experience of data quality, statistical relationships and interpretation.</p>
+      <div class="dataset-tags">
+        <span>Airline Passenger Data</span>
+        <span>Student Performance</span>
+        <span>Customer Spending</span>
+        <span>Gym Member Data</span>
+        <span>Sleep Health</span>
+        <span>Housing Prices</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Tools & Practice</span>
+        <h2>Analytical environment</h2>
+      </div>
+    </div>
+
+    <div class="tool-grid">
+      <article class="tool-card"><b>Python + Jupyter</b><span>Hands-on analytical workflows, experimentation and step-by-step demonstrations.</span></article>
+      <article class="tool-card"><b>Pandas + NumPy</b><span>Data organization, filtering, cleaning and numerical analysis.</span></article>
+      <article class="tool-card"><b>Matplotlib + Seaborn</b><span>Visual exploration and communication of analytical patterns.</span></article>
+      <article class="tool-card"><b>Statistical Reasoning</b><span>Hypothesis testing, significance and evidence-based interpretation.</span></article>
+    </div>
+  </div>
+</section>
+
+
 
 <section class="section">
   <div class="container">
