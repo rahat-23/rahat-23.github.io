@@ -1,1 +1,343 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Computer Networks | Teaching | Dr. Rahat Izhar</title><link rel="stylesheet" href="/assets/css/style.css"></head><body><header class="header"><div class="container nav"><a class="brand" href="/"><span class="brand-mark">RI</span><span>Dr. Rahat Izhar</span></a><nav class="nav-links"><a href="/">Home</a><a href="/about/">About</a><a href="/research/">Research</a><a href="/publications/">Publications</a><a class="active" href="/teaching/">Teaching</a><a href="/supervision/">Supervision</a><a href="/leadership-service/">Leadership & Service</a><a href="/cv/">CV</a><a href="/contact/">Contact</a></nav><div class="nav-actions"><button class="icon-btn" data-theme-toggle>☾</button><button class="menu-btn" data-menu-toggle>☰</button></div></div></header><main><section class="page-hero"><div class="container"><span class="eyebrow">Systems & Infrastructure</span><h1>Computer Networks</h1><p>An undergraduate course introducing the principles, models and protocols that allow computers and networked systems to communicate.</p><div class="course-meta"><span class="meta-pill">Undergraduate</span><span class="meta-pill">Networking</span><span class="meta-pill">Protocols</span><span class="meta-pill">Systems</span></div></div></section><section class="section"><div class="container"><div class="section-head"><div><h2>Weekly teaching map</h2><p class="section-lead">A syllabus-driven view of the course. Material links activate as selected resources are reviewed and published.</p></div></div><div class="week-table"><div class="week-row"><div class="week-num">Week 1</div><div class="week-topic">Networking foundations and communication models</div><div class="week-res"><span class="resource disabled">Slides</span><span class="resource disabled">Notes</span></div></div><div class="week-row"><div class="week-num">Week 2</div><div class="week-topic">Network types, topologies and layered architecture</div><div class="week-res"><span class="resource disabled">Slides</span><span class="resource disabled">Notes</span></div></div><div class="week-row"><div class="week-num">Week 3</div><div class="week-topic">Physical and data-link concepts</div><div class="week-res"><span class="resource disabled">Slides</span><span class="resource disabled">Notes</span></div></div><div class="week-row"><div class="week-num">Week 4</div><div class="week-topic">IP addressing and network-layer concepts</div><div class="week-res"><span class="resource disabled">Slides</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div></div><div class="week-row"><div class="week-num">Week 5</div><div class="week-topic">Transport-layer communication</div><div class="week-res"><span class="resource disabled">Slides</span><span class="resource disabled">Notes</span></div></div><div class="week-row"><div class="week-num">Week 6</div><div class="week-topic">Application protocols and services</div><div class="week-res"><span class="resource disabled">Slides</span><span class="resource disabled">Notes</span></div></div><div class="week-row"><div class="week-num">Week 7</div><div class="week-topic">Routing and network connectivity concepts</div><div class="week-res"><span class="resource disabled">Slides</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div></div><div class="week-row"><div class="week-num">Week 8</div><div class="week-topic">Network security and practical troubleshooting foundations</div><div class="week-res"><span class="resource disabled">Slides</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div></div></div><div class="callout" style="margin-top:24px">Selected watermarked slides, notes and code examples will be added after the resource review pass.</div></div></section></main><footer class="footer"><div class="container footer-grid"><div><strong>Dr. Rahat Izhar</strong><p>Teaching portfolio · Selected educational resources</p></div><div class="footer-links"><a href="/teaching/">All Courses</a><a href="/contact/">Contact</a></div></div></footer><script src="/assets/js/main.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Computer Networks teaching portfolio of Dr. Rahat Izhar — networking fundamentals, models, protocols, Internet concepts, wireless networking, security and Packet Tracer practice.">
+  <title>Computer Networks | Dr. Rahat Izhar</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .profile-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+    .profile-stat{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+    .profile-stat b{display:block;font-size:18px;letter-spacing:-.02em;margin-bottom:5px}
+    .profile-stat span{font-size:12px;color:var(--muted)}
+    .course-overview{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:start}
+    .outcome-list{display:grid;gap:10px;margin:16px 0 0;padding:0;list-style:none}
+    .outcome-list li{padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:var(--surface-2);color:var(--muted)}
+    .topic-cloud{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+    .topic-pill{padding:7px 10px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);font-size:12px;font-weight:750;color:var(--muted)}
+    .phase-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .phase-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:24px}
+    .phase-no{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:11px;background:var(--surface-2);color:var(--brand);font-weight:900;font-size:13px;margin-bottom:16px}
+    .phase-card h3{margin:0 0 8px;font-size:22px;letter-spacing:-.025em}
+    .phase-card p{margin:0 0 15px;color:var(--muted)}
+    .phase-list{margin:0;padding-left:18px;color:var(--muted)}
+    .phase-list li{margin:7px 0}
+    .approach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .approach-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
+    .approach-card .step{font-size:11px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--brand);margin-bottom:8px}
+    .approach-card h3{margin:0 0 8px;font-size:20px}
+    .approach-card p{margin:0;color:var(--muted)}
+    .lab-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .lab-card{background:linear-gradient(135deg,var(--surface),color-mix(in srgb,var(--brand) 5%,var(--surface)));border:1px solid var(--line);border-radius:22px;padding:24px}
+    .lab-card h3{font-size:22px;margin:0 0 8px}
+    .lab-card p{color:var(--muted);margin:0 0 14px}
+    .lab-focus{display:flex;flex-wrap:wrap;gap:8px}
+    .lab-focus span{padding:6px 9px;border-radius:999px;background:var(--surface-2);font-size:11px;font-weight:800;color:var(--muted)}
+    .tool-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .tool-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px}
+    .tool-card b{display:block;margin-bottom:6px}
+    .tool-card span{font-size:13px;color:var(--muted)}
+    .resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .resource-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
+    .resource-card h3{font-size:19px;margin:0 0 7px}
+    .resource-card p{margin:0;color:var(--muted)}
+    @media(max-width:900px){
+      .profile-stats,.tool-grid{grid-template-columns:repeat(2,1fr)}
+      .course-overview,.phase-grid,.lab-grid{grid-template-columns:1fr}
+      .approach-grid,.resource-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:520px){.profile-stats,.tool-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="/"><span class="brand-mark">RI</span><span>Dr. Rahat Izhar</span></a>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/research/">Research</a>
+      <a href="/publications/">Publications</a>
+      <a class="active" href="/teaching/">Teaching</a>
+      <a href="/supervision/">Supervision</a>
+      <a href="/leadership-service/">Leadership & Service</a>
+      <a href="/cv/">CV</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle theme">☾</button>
+      <button class="menu-btn" data-menu-toggle aria-label="Open menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Teaching Portfolio · Networks & Communication</span>
+    <h1>Computer Networks</h1>
+    <p>An applied networking course that develops understanding from core network concepts and data communication to protocol models, Internet technologies, wireless communication, network security and practical network simulation.</p>
+
+    <div class="profile-stats">
+      <div class="profile-stat"><b>Network Foundations</b><span>LAN · MAN · WAN · core terminology</span></div>
+      <div class="profile-stat"><b>OSI & TCP/IP</b><span>Layered communication models</span></div>
+      <div class="profile-stat"><b>Internet & Wireless</b><span>IP · DNS · routing · Wi-Fi · cellular</span></div>
+      <div class="profile-stat"><b>Packet Tracer</b><span>Simulation · configuration · troubleshooting</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container course-overview">
+    <article class="card">
+      <span class="card-kicker">Course Identity</span>
+      <h2>Teaching networks from concepts to working communication systems</h2>
+      <p>The course begins with why networks are needed and the vocabulary used to describe them, then builds through data communication, layered network models, common protocols, Internet concepts and wireless networking. Security principles and practical simulations are integrated to connect theory with observable network behaviour.</p>
+
+      <div class="topic-cloud">
+        <span class="topic-pill">Nodes & Links</span>
+        <span class="topic-pill">Packets</span>
+        <span class="topic-pill">Bandwidth & Latency</span>
+        <span class="topic-pill">LAN · MAN · WAN</span>
+        <span class="topic-pill">Analog & Digital Signals</span>
+        <span class="topic-pill">OSI Model</span>
+        <span class="topic-pill">TCP/IP</span>
+        <span class="topic-pill">HTTP · FTP · SMTP</span>
+        <span class="topic-pill">DNS · DHCP</span>
+        <span class="topic-pill">IPv4 · IPv6</span>
+        <span class="topic-pill">Routing</span>
+        <span class="topic-pill">Wireless Networks</span>
+        <span class="topic-pill">Network Security</span>
+        <span class="topic-pill">Packet Tracer</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <span class="card-kicker">Learning Focus</span>
+      <h3>Students are guided to understand:</h3>
+      <ul class="outcome-list">
+        <li>How networked devices communicate and exchange data.</li>
+        <li>How layered network models organize communication functions.</li>
+        <li>How addressing, protocols, DNS, routing and client-server communication support the Internet.</li>
+        <li>How wireless networks differ from wired communication environments.</li>
+        <li>How basic security practices and simulation tools support safer, more reliable networks.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Teaching Approach</span>
+        <h2>Visualize → connect → simulate</h2>
+        <p class="section-lead">Networking concepts become easier to understand when students can see how data moves, connect protocol behaviour to real services, and test configurations through simulation.</p>
+      </div>
+    </div>
+
+    <div class="approach-grid">
+      <article class="approach-card">
+        <div class="step">01 · Visualize</div>
+        <h3>Make invisible communication visible</h3>
+        <p>Layered models, signals, packets and addressing are introduced through clear diagrams and communication flows before configuration begins.</p>
+      </article>
+      <article class="approach-card">
+        <div class="step">02 · Connect</div>
+        <h3>Relate protocols to everyday Internet use</h3>
+        <p>Students connect concepts such as DNS, HTTP, DHCP, IP addressing and routing to familiar network and web interactions.</p>
+      </article>
+      <article class="approach-card">
+        <div class="step">03 · Simulate</div>
+        <h3>Test network behaviour practically</h3>
+        <p>Packet Tracer activities reinforce topology design, IP configuration, connectivity testing and troubleshooting.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Curriculum Architecture</span>
+        <h2>Course learning pathway</h2>
+        <p class="section-lead">The public portfolio groups the course into four academic phases rather than reproducing internal assessment or timetable information.</p>
+      </div>
+    </div>
+
+    <div class="phase-grid">
+      <article class="phase-card">
+        <div class="phase-no">01</div>
+        <h3>Network Foundations</h3>
+        <p>Establishing the vocabulary and communication concepts needed to reason about networks.</p>
+        <ul class="phase-list">
+          <li>What a network is and why networks are needed</li>
+          <li>Nodes, links, packets, bandwidth and latency</li>
+          <li>LAN, MAN and WAN</li>
+          <li>Real-world networking applications</li>
+          <li>Sender, receiver, medium, message and protocol</li>
+          <li>Analog vs digital signals and data representation</li>
+        </ul>
+      </article>
+
+      <article class="phase-card">
+        <div class="phase-no">02</div>
+        <h3>Models, Protocols & Data Flow</h3>
+        <p>Understanding how layered architectures organize communication across networked systems.</p>
+        <ul class="phase-list">
+          <li>OSI model and its seven layers</li>
+          <li>TCP/IP model and relationship with OSI</li>
+          <li>HTTP, FTP, SMTP, DNS and DHCP</li>
+          <li>Encapsulation and decapsulation</li>
+          <li>Movement of data across network layers</li>
+          <li>Protocol roles in end-to-end communication</li>
+        </ul>
+      </article>
+
+      <article class="phase-card">
+        <div class="phase-no">03</div>
+        <h3>Internet & Wireless Networking</h3>
+        <p>Connecting network models to Internet addressing, routing and modern wireless communication.</p>
+        <ul class="phase-list">
+          <li>IPv4 and IPv6 addressing</li>
+          <li>DNS and website location</li>
+          <li>Routing basics and packet switching</li>
+          <li>Client-server communication</li>
+          <li>Wi-Fi, Bluetooth and cellular networks</li>
+          <li>Access points, SSIDs and wireless configuration</li>
+        </ul>
+      </article>
+
+      <article class="phase-card">
+        <div class="phase-no">04</div>
+        <h3>Security & Network Simulation</h3>
+        <p>Introducing safe network practices and reinforcing concepts through practical simulation.</p>
+        <ul class="phase-list">
+          <li>Malware, phishing and hacking attempts</li>
+          <li>Firewalls and encryption basics</li>
+          <li>Secure passwords and safe network practices</li>
+          <li>Introduction to VPNs</li>
+          <li>LAN design and IP configuration</li>
+          <li>Connectivity testing and troubleshooting</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Practical Networking</span>
+        <h2>Simulation-based learning with Packet Tracer</h2>
+        <p class="section-lead">Practical simulation is used throughout the course to help students connect abstract networking concepts with observable device and topology behaviour.</p>
+      </div>
+    </div>
+
+    <div class="lab-grid">
+      <article class="lab-card">
+        <span class="card-kicker">Network Construction</span>
+        <h3>Designing wired and wireless networks</h3>
+        <p>Students work with small network scenarios to understand topology, connectivity and the relationship between devices.</p>
+        <div class="lab-focus">
+          <span>Simple LANs</span><span>Wired Networks</span><span>Wireless Networks</span><span>Topology Design</span>
+        </div>
+      </article>
+
+      <article class="lab-card">
+        <span class="card-kicker">Configuration & Diagnosis</span>
+        <h3>IP configuration and troubleshooting</h3>
+        <p>Simulation activities reinforce IP addressing, connection testing and basic troubleshooting when communication does not behave as expected.</p>
+        <div class="lab-focus">
+          <span>IP Addressing</span><span>Connectivity Testing</span><span>Troubleshooting</span><span>Configuration</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Tools & Concepts</span>
+        <h2>Networking environment</h2>
+      </div>
+    </div>
+
+    <div class="tool-grid">
+      <article class="tool-card"><b>Packet Tracer</b><span>Network simulation, topology design and configuration practice.</span></article>
+      <article class="tool-card"><b>OSI / TCP-IP Models</b><span>Conceptual frameworks for understanding layered communication.</span></article>
+      <article class="tool-card"><b>IPv4 / IPv6</b><span>Addressing concepts used to explain Internet communication.</span></article>
+      <article class="tool-card"><b>Security Basics</b><span>Firewalls, encryption, VPNs and safe network practices.</span></article>
+    </div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Selected Teaching Resources</span>
+        <h2>Curated materials for public learning</h2>
+        <p class="section-lead">This page is an academic teaching showcase rather than a complete course-management archive. Selected resources will be published progressively after review.</p>
+      </div>
+    </div>
+
+    <div class="resource-grid">
+      <article class="resource-card">
+        <h3>Lecture Slides</h3>
+        <p>Selected networking lecture decks will be converted to watermarked PDF format before public release.</p>
+      </article>
+      <article class="resource-card">
+        <h3>Simulation Examples</h3>
+        <p>Selected Packet Tracer examples may be published to illustrate topology design, IP configuration and troubleshooting.</p>
+      </article>
+      <article class="resource-card">
+        <h3>Teaching Notes</h3>
+        <p>Concise supporting notes may be added for network models, protocols, addressing, wireless communication and security concepts.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="connect-card">
+      <div>
+        <span class="section-kicker">Teaching Portfolio</span>
+        <h2>Explore related computing courses</h2>
+        <p class="section-lead">Continue through programming, software development and other areas of my teaching portfolio.</p>
+      </div>
+      <div class="connect-actions">
+        <a class="btn primary" href="/teaching/basic-programming/">Basic Programming</a>
+        <a class="btn" href="/teaching/oop/">Object-Oriented Programming</a>
+        <a class="btn" href="/teaching/">All Courses</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>Dr. Rahat Izhar</strong>
+      <p>Academic portfolio · Teaching · Research · Leadership</p>
+    </div>
+    <div class="footer-links">
+      <a href="/teaching/">Teaching</a>
+      <a href="/research/">Research</a>
+      <a href="/publications/">Publications</a>
+      <a href="/cv/">CV</a>
+      <a href="/contact/">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
