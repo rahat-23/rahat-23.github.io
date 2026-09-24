@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Data Structures and Algorithms teaching portfolio of Dr. Rahat Izhar — algorithmic thinking, complexity analysis, Python implementation, tracing, data structures and algorithm design.">
-  <title>Data Structures & Algorithms | Dr. Rahat Izhar</title>
+  <meta name="description" content="Data Structures and Algorithms teaching portfolio of Rahat Izhar, Ph.D. — algorithmic thinking, complexity analysis, Python implementation, tracing, data structures and algorithm design.">
+  <title>Data Structures & Algorithms | Rahat Izhar, Ph.D.</title>
   <link rel="stylesheet" href="/assets/css/style.css">
   <style>
     .profile-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
@@ -39,16 +39,12 @@
     .tool-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px}
     .tool-card b{display:block;margin-bottom:6px}
     .tool-card span{font-size:13px;color:var(--muted)}
-    .resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .resource-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
-    .resource-card h3{font-size:19px;margin:0 0 7px}
-    .resource-card p{margin:0;color:var(--muted)}
     @media(max-width:1000px){.approach-grid{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:900px){
       .profile-stats,.tool-grid{grid-template-columns:repeat(2,1fr)}
       .course-overview,.phase-grid{grid-template-columns:1fr}
       .phase-card.wide{grid-column:auto}
-      .applied-grid,.resource-grid{grid-template-columns:1fr}
+      .applied-grid{grid-template-columns:1fr}
     }
     @media(max-width:560px){.profile-stats,.tool-grid,.approach-grid{grid-template-columns:1fr}}
   </style>
@@ -56,7 +52,7 @@
 <body>
 <header class="header">
   <div class="container nav">
-    <a class="brand" href="/"><span class="brand-mark">RI</span><span>Dr. Rahat Izhar</span></a>
+    <a class="brand" href="/"><span class="brand-mark">RI</span><span>Rahat Izhar, Ph.D.</span></a>
     <nav class="nav-links">
       <a href="/">Home</a>
       <a href="/about/">About</a>
@@ -131,216 +127,6 @@
   </div>
 </section>
 
-<section class="section band">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <span class="section-kicker">Teaching Approach</span>
-        <h2>Explain → trace → implement → compare</h2>
-        <p class="section-lead">DSA becomes meaningful when students can move fluently between a concept, a hand-worked trace, a Python implementation and an efficiency argument.</p>
-      </div>
-    </div>
-
-    <div class="approach-grid">
-      <article class="approach-card">
-        <div class="step">01 · Explain</div>
-        <h3>Build the structural idea</h3>
-        <p>Each topic begins with the problem a structure or algorithm is designed to solve, supported by real examples and visual models.</p>
-      </article>
-      <article class="approach-card">
-        <div class="step">02 · Trace</div>
-        <h3>Reason step by step</h3>
-        <p>Whiteboard and digital-board dry runs make pointers, comparisons, recursive calls and traversal states visible before coding.</p>
-      </article>
-      <article class="approach-card">
-        <div class="step">03 · Implement</div>
-        <h3>Translate reasoning into Python</h3>
-        <p>Students implement core structures and algorithms, test behaviour and connect code statements to the traced algorithm.</p>
-      </article>
-      <article class="approach-card">
-        <div class="step">04 · Compare</div>
-        <h3>Evaluate the trade-offs</h3>
-        <p>Alternative approaches are compared using complexity, stability, memory behaviour, structure requirements and problem context.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <span class="section-kicker">Curriculum Architecture</span>
-        <h2>Course learning pathway</h2>
-        <p class="section-lead">The public portfolio presents the curriculum as a progression of problem-solving capabilities rather than reproducing internal weekly or assessment schedules.</p>
-      </div>
-    </div>
-
-    <div class="phase-grid">
-      <article class="phase-card">
-        <div class="phase-no">01</div>
-        <h3>Algorithmic Foundations & Complexity</h3>
-        <p>Establishing the language used to reason about computational solutions.</p>
-        <ul class="phase-list">
-          <li>Data structures, algorithms and abstract data types</li>
-          <li>Programming versus algorithm design</li>
-          <li>Systematic problem-solving processes</li>
-          <li>Input size and operation-count reasoning</li>
-          <li>Best, average and worst cases</li>
-          <li>Big-O, Big-Theta and growth of functions</li>
-          <li>Time-space trade-offs</li>
-        </ul>
-      </article>
-
-      <article class="phase-card">
-        <div class="phase-no">02</div>
-        <h3>Arrays, Searching & Sorting</h3>
-        <p>Studying indexed data and the algorithms used to locate and order information.</p>
-        <ul class="phase-list">
-          <li>Arrays, Python lists and direct access</li>
-          <li>Insertion, deletion, traversal and operation cost</li>
-          <li>Linear and binary search</li>
-          <li>Bubble, selection and insertion sort</li>
-          <li>Stability and comparative analysis</li>
-          <li>Merge, quick and heap sort</li>
-          <li>Divide-and-conquer reasoning in sorting</li>
-        </ul>
-      </article>
-
-      <article class="phase-card">
-        <div class="phase-no">03</div>
-        <h3>Linear Data Structures</h3>
-        <p>Moving from contiguous storage to linked and restricted-access structures.</p>
-        <ul class="phase-list">
-          <li>Singly, doubly and circular linked lists</li>
-          <li>Traversal, search, insertion and deletion</li>
-          <li>Linked-list reversal and structural reasoning</li>
-          <li>Stacks and LIFO behaviour</li>
-          <li>Infix-to-postfix conversion and postfix evaluation</li>
-          <li>Queues, circular queues, priority queues and deques</li>
-          <li>Comparing arrays, lists, stacks and queues</li>
-        </ul>
-      </article>
-
-      <article class="phase-card">
-        <div class="phase-no">04</div>
-        <h3>Trees, Graphs & Traversal</h3>
-        <p>Extending data organization from sequences to hierarchies and networks.</p>
-        <ul class="phase-list">
-          <li>Tree terminology and binary-tree structures</li>
-          <li>Binary search trees and ordered search</li>
-          <li>Inorder, preorder, postorder and level-order traversal</li>
-          <li>Tree height, balance and efficiency</li>
-          <li>Graph representations and connectivity</li>
-          <li>Breadth-first and depth-first search</li>
-          <li>Weighted graphs, shortest paths and spanning trees</li>
-        </ul>
-      </article>
-
-      <article class="phase-card wide">
-        <div class="phase-no">05</div>
-        <h3>Search & Algorithm Design Strategies</h3>
-        <p>Bringing together data structures and algorithmic reasoning to choose strategies for larger problem classes.</p>
-        <ul class="phase-list">
-          <li>State-space search and frontier-based reasoning</li>
-          <li>BFS, DFS, depth-limited and iterative-deepening search</li>
-          <li>Uniform-cost, greedy best-first and A* search</li>
-          <li>Brute-force design</li>
-          <li>Divide and conquer</li>
-          <li>Greedy algorithms</li>
-          <li>Dynamic programming and repeated-subproblem reasoning</li>
-        </ul>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section band">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <span class="section-kicker">Applied Algorithmic Reasoning</span>
-        <h2>From diagrams and traces to implementation decisions</h2>
-        <p class="section-lead">Practical work emphasizes the reasoning process behind an answer, not only the final code.</p>
-      </div>
-    </div>
-
-    <div class="applied-grid">
-      <article class="applied-card">
-        <span class="card-kicker">Tracing & Dry Runs</span>
-        <h3>Make algorithm state visible</h3>
-        <p>Students trace comparisons, swaps, pointer changes, queues, stacks, recursive calls and traversal order so they can explain why an algorithm produces its result.</p>
-        <div class="applied-focus">
-          <span>Sorting Traces</span><span>Pointer Diagrams</span><span>Recursion</span><span>BFS / DFS</span>
-        </div>
-      </article>
-
-      <article class="applied-card">
-        <span class="card-kicker">Algorithm Comparison</span>
-        <h3>Choose based on evidence</h3>
-        <p>Algorithms are compared using growth rate, memory use, stability, structure assumptions and expected operations rather than memorised labels.</p>
-        <div class="applied-focus">
-          <span>Big-O</span><span>Time-Space Trade-offs</span><span>Stability</span><span>Use Cases</span>
-        </div>
-      </article>
-
-      <article class="applied-card">
-        <span class="card-kicker">Implementation</span>
-        <h3>Connect the model to Python</h3>
-        <p>Python coding demonstrations and exercises reinforce how abstract structures and algorithm steps translate into executable programs.</p>
-        <div class="applied-focus">
-          <span>Python</span><span>Testing</span><span>Debugging</span><span>Structured Reasoning</span>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <span class="section-kicker">Tools & Learning Media</span>
-        <h2>Teaching environment</h2>
-      </div>
-    </div>
-
-    <div class="tool-grid">
-      <article class="tool-card"><b>Python</b><span>Primary implementation language for structures and algorithms.</span></article>
-      <article class="tool-card"><b>PyCharm / Jupyter / Colab</b><span>Development and experimentation environments used for coding demonstrations and practice.</span></article>
-      <article class="tool-card"><b>Whiteboard / Digital Board</b><span>Step-by-step traces, pointer diagrams and algorithm-state visualisation.</span></article>
-      <article class="tool-card"><b>Visualisations</b><span>Diagrams and worked examples used to support conceptual understanding and comparison.</span></article>
-    </div>
-  </div>
-</section>
-
-<section class="section band">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <span class="section-kicker">Selected Teaching Resources</span>
-        <h2>Curated materials for public learning</h2>
-        <p class="section-lead">This page is an academic teaching showcase rather than a complete course-management archive. Selected resources will be published progressively after review.</p>
-      </div>
-    </div>
-
-    <div class="resource-grid">
-      <article class="resource-card">
-        <h3>Lecture Slides</h3>
-        <p>Selected DSA lecture decks will be converted to watermarked PDF format before public release.</p>
-      </article>
-      <article class="resource-card">
-        <h3>Worked Traces & Visuals</h3>
-        <p>Selected dry runs, diagrams and algorithm visualisations may be published to support independent study.</p>
-      </article>
-      <article class="resource-card">
-        <h3>Python Examples</h3>
-        <p>Selected implementation examples may be released for searching, sorting, data structures, traversals and algorithm-design techniques.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
 <section class="section">
   <div class="container">
     <div class="connect-card">
@@ -362,7 +148,7 @@
 <footer class="footer">
   <div class="container footer-grid">
     <div>
-      <strong>Dr. Rahat Izhar</strong>
+      <strong>Rahat Izhar, Ph.D.</strong>
       <p>Academic portfolio · Teaching · Research · Leadership</p>
     </div>
     <div class="footer-links">
