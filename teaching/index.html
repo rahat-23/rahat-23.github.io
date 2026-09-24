@@ -1,1 +1,270 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Teaching | Dr. Rahat Izhar</title><link rel="stylesheet" href="/assets/css/style.css"></head><body><header class="header"><div class="container nav"><a class="brand" href="/"><span class="brand-mark">RI</span><span>Dr. Rahat Izhar</span></a><nav class="nav-links"><a href="/">Home</a><a href="/about/">About</a><a href="/research/">Research</a><a href="/publications/">Publications</a><a class="active" href="/teaching/">Teaching</a><a href="/supervision/">Supervision</a><a href="/leadership-service/">Leadership & Service</a><a href="/cv/">CV</a><a href="/contact/">Contact</a></nav><div class="nav-actions"><button class="icon-btn" data-theme-toggle>☾</button><button class="menu-btn" data-menu-toggle>☰</button></div></div></header><main><section class="page-hero"><div class="container"><span class="eyebrow">Teaching Portfolio</span><h1>Courses, weekly learning plans and selected resources</h1><p>Each course page follows a syllabus-driven, week-by-week structure. Selected lecture slides will be published as watermarked PDFs, with notes and code examples added where useful.</p></div></section><section class="section"><div class="container course-grid"><a class="card course-card" href="/teaching/basic-programming/"><div><span class="card-kicker">Programming Foundations</span><h3>Basic Programming</h3><p>Programming concepts, Python foundations and computational thinking.</p></div><span class="arrow">→</span></a><a class="card course-card" href="/teaching/oop/"><div><span class="card-kicker">Software Development</span><h3>Object-Oriented Programming</h3><p>Classes, objects, inheritance, polymorphism and practical development.</p></div><span class="arrow">→</span></a><a class="card course-card" href="/teaching/data-structures-algorithms/"><div><span class="card-kicker">Algorithms</span><h3>Data Structures & Algorithms</h3><p>Core structures, searching, sorting, trees, graphs and complexity.</p></div><span class="arrow">→</span></a><a class="card course-card" href="/teaching/computer-networks/"><div><span class="card-kicker">Systems</span><h3>Computer Networks</h3><p>Networking concepts, protocols and practical foundations.</p></div><span class="arrow">→</span></a><a class="card course-card" href="/teaching/web-development/"><div><span class="card-kicker">Web</span><h3>Web Development</h3><p>Foundations of building and structuring web applications.</p></div><span class="arrow">→</span></a><a class="card course-card" href="/teaching/ai-iot/"><div><span class="card-kicker">Emerging Technology</span><h3>AI & IoT</h3><p>Introductory AI and connected-device concepts with applied examples.</p></div><span class="arrow">→</span></a><a class="card course-card" href="/teaching/isad/"><div><span class="card-kicker">Information Systems</span><h3>Information Systems Analysis & Design</h3><p>Requirements, process modeling, DFDs and system analysis techniques.</p></div><span class="arrow">→</span></a><a class="card course-card" href="/teaching/data-science/"><div><span class="card-kicker">Data</span><h3>Data Science</h3><p>Data analysis, statistical reasoning and applied computational workflows.</p></div><span class="arrow">→</span></a><a class="card course-card" href="/teaching/mba/"><div><span class="card-kicker">Graduate Teaching</span><h3>MBA / Graduate Course</h3><p>Graduate-level teaching integrating technology, analysis and applied decision-making.</p></div><span class="arrow">→</span></a></div></section></main><footer class="footer"><div class="container footer-grid"><div><strong>Dr. Rahat Izhar</strong><p>Selected teaching resources for educational use.</p></div><div class="footer-links"><a href="/contact/">Contact</a><a href="/cv/">CV</a></div></div></footer><script src="/assets/js/main.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Teaching portfolio of Dr. Rahat Izhar — course pages, weekly syllabi, selected lecture slides, notes and code examples.">
+  <title>Teaching | Dr. Rahat Izhar</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .teaching-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+    .resource-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .resource-step{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px}
+    .resource-step b{display:block;color:var(--brand);font-size:13px;margin-bottom:6px}
+    .resource-step h3{margin:0 0 7px;font-size:19px}
+    .resource-step p{margin:0;color:var(--muted);font-size:14px}
+    .course-section-title{margin:42px 0 18px}
+    .course-section-title:first-child{margin-top:0}
+    .course-card .course-tag{display:inline-flex;margin-top:16px;padding:6px 9px;border-radius:999px;background:var(--surface-2);color:var(--muted);font-size:11px;font-weight:800}
+    .note-card{background:linear-gradient(135deg,var(--surface),color-mix(in srgb,var(--brand) 6%,var(--surface)));border:1px solid var(--line);border-radius:24px;padding:28px}
+    @media(max-width:900px){.teaching-summary,.resource-flow{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:560px){.teaching-summary,.resource-flow{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="/"><span class="brand-mark">RI</span><span>Dr. Rahat Izhar</span></a>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/research/">Research</a>
+      <a href="/publications/">Publications</a>
+      <a class="active" href="/teaching/">Teaching</a>
+      <a href="/supervision/">Supervision</a>
+      <a href="/leadership-service/">Leadership & Service</a>
+      <a href="/cv/">CV</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle theme">☾</button>
+      <button class="menu-btn" data-menu-toggle aria-label="Open menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Teaching Portfolio</span>
+    <h1>Structured courses, weekly learning pathways and selected resources</h1>
+    <p>My teaching portfolio spans programming, software development, algorithms, systems, information systems, data science, AI-related topics and graduate teaching. Each course page is organized around a syllabus-driven weekly structure, with selected resources published for educational use.</p>
+
+    <div class="teaching-summary">
+      <div class="stat"><b>9</b><span>Course areas taught</span></div>
+      <div class="stat"><b>UG + PG</b><span>Undergraduate & graduate teaching</span></div>
+      <div class="stat"><b>Weekly</b><span>Syllabus-based organization</span></div>
+      <div class="stat"><b>Slides · Notes · Code</b><span>Selected teaching resources</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Resource Structure</span>
+        <h2>How each course page works</h2>
+        <p class="section-lead">The goal is to make course material easy to navigate without turning the website into a file dump.</p>
+      </div>
+    </div>
+
+    <div class="resource-flow">
+      <article class="resource-step">
+        <b>01</b>
+        <h3>Course overview</h3>
+        <p>Scope, learning focus, level, technologies and key themes.</p>
+      </article>
+      <article class="resource-step">
+        <b>02</b>
+        <h3>Weekly syllabus</h3>
+        <p>Topics arranged week by week to show the learning progression.</p>
+      </article>
+      <article class="resource-step">
+        <b>03</b>
+        <h3>Selected resources</h3>
+        <p>Watermarked lecture slides, notes and supporting examples where useful.</p>
+      </article>
+      <article class="resource-step">
+        <b>04</b>
+        <h3>Code & practice</h3>
+        <p>Selected code examples and practical materials linked when appropriate.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Courses Taught</span>
+        <h2>Programming, software & algorithms</h2>
+        <p class="section-lead">Core computing courses focused on computational thinking, programming practice and software-development foundations.</p>
+      </div>
+    </div>
+
+    <div class="course-grid">
+      <a class="card course-card" href="/teaching/basic-programming/">
+        <div>
+          <span class="card-kicker">Programming Foundations</span>
+          <h3>Basic Programming</h3>
+          <p>Programming concepts, Python fundamentals, problem solving, computational thinking and introductory algorithmic reasoning.</p>
+          <span class="course-tag">Python · Foundations</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="card course-card" href="/teaching/oop/">
+        <div>
+          <span class="card-kicker">Software Development</span>
+          <h3>Object-Oriented Programming</h3>
+          <p>Classes, objects, constructors, inheritance, polymorphism, GUI practice and Git-based development workflows.</p>
+          <span class="course-tag">Python · OOP · Git</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="card course-card" href="/teaching/data-structures-algorithms/">
+        <div>
+          <span class="card-kicker">Algorithms</span>
+          <h3>Data Structures & Algorithms</h3>
+          <p>Searching, sorting, stacks, queues, linked structures, trees, graphs and algorithmic complexity.</p>
+          <span class="course-tag">Algorithms · Data Structures</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+
+    <div class="course-section-title">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker">Systems, Web & Information Systems</span>
+          <h2>Applied computing foundations</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="course-grid">
+      <a class="card course-card" href="/teaching/computer-networks/">
+        <div>
+          <span class="card-kicker">Systems</span>
+          <h3>Computer Networks</h3>
+          <p>Networking concepts, architectures, protocols, addressing and practical network foundations.</p>
+          <span class="course-tag">Networks · Protocols</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="card course-card" href="/teaching/web-development/">
+        <div>
+          <span class="card-kicker">Web</span>
+          <h3>Web Development</h3>
+          <p>Foundations of structuring, developing and understanding web-based applications.</p>
+          <span class="course-tag">Web · Development</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="card course-card" href="/teaching/isad/">
+        <div>
+          <span class="card-kicker">Information Systems</span>
+          <h3>Information Systems Analysis & Design</h3>
+          <p>Requirements, process modelling, data-flow diagrams and system-analysis techniques.</p>
+          <span class="course-tag">Analysis · DFD · Design</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+
+    <div class="course-section-title">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker">Data, AI & Graduate Teaching</span>
+          <h2>Data-driven and interdisciplinary courses</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="course-grid">
+      <a class="card course-card" href="/teaching/data-science/">
+        <div>
+          <span class="card-kicker">Data</span>
+          <h3>Data Science</h3>
+          <p>Data analysis, statistical reasoning and applied computational workflows for evidence-based interpretation.</p>
+          <span class="course-tag">Data · Statistics</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="card course-card" href="/teaching/ai-iot/">
+        <div>
+          <span class="card-kicker">Emerging Technology</span>
+          <h3>AI & IoT</h3>
+          <p>Introductory artificial-intelligence and connected-device concepts with applied examples and technology context.</p>
+          <span class="course-tag">AI · IoT</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="card course-card" href="/teaching/mba/">
+        <div>
+          <span class="card-kicker">Graduate Teaching</span>
+          <h3>MBA / Graduate Course</h3>
+          <p>Graduate-level teaching integrating technology, analysis, case-based reasoning and applied decision making.</p>
+          <span class="course-tag">Graduate · Applied</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <div class="note-card">
+      <span class="section-kicker">Teaching Materials</span>
+      <h2>Selected resources, not a complete course archive</h2>
+      <p class="section-lead">Public course pages will contain selected lecture slides, notes and code examples. Lecture slides will be published as watermarked PDFs; original editable slide decks, examinations, answer keys, student work and internal academic documents will remain private.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="connect-card">
+      <div>
+        <span class="section-kicker">Explore Teaching</span>
+        <h2>Open a course to view its syllabus and weekly plan</h2>
+        <p class="section-lead">Course pages will continue to grow as selected teaching resources are prepared for public release.</p>
+      </div>
+      <div class="connect-actions">
+        <a class="btn primary" href="/teaching/basic-programming/">Basic Programming</a>
+        <a class="btn" href="/teaching/oop/">OOP</a>
+        <a class="btn" href="/teaching/data-structures-algorithms/">DSA</a>
+        <a class="btn" href="/contact/">Contact</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>Dr. Rahat Izhar</strong>
+      <p>Selected teaching resources for educational use.</p>
+    </div>
+    <div class="footer-links">
+      <a href="/teaching/">Teaching</a>
+      <a href="/research/">Research</a>
+      <a href="/publications/">Publications</a>
+      <a href="/cv/">CV</a>
+      <a href="/contact/">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
