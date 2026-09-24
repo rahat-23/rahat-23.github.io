@@ -1,1 +1,468 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CV | Dr. Rahat Izhar</title><link rel="stylesheet" href="/assets/css/style.css"></head><body><header class="header"><div class="container nav"><a class="brand" href="/"><span class="brand-mark">RI</span><span>Dr. Rahat Izhar</span></a><nav class="nav-links"><a href="/">Home</a><a href="/about/">About</a><a href="/research/">Research</a><a href="/publications/">Publications</a><a href="/teaching/">Teaching</a><a href="/supervision/">Supervision</a><a href="/leadership-service/">Leadership & Service</a><a class="active" href="/cv/">CV</a><a href="/contact/">Contact</a></nav><div class="nav-actions"><button class="icon-btn" data-theme-toggle>☾</button><button class="menu-btn" data-menu-toggle>☰</button></div></div></header><main><section class="page-hero"><div class="container"><span class="eyebrow">Curriculum Vitae</span><h1>Academic CV</h1><p>A concise web summary will sit here alongside the current downloadable PDF CV. The PDF will be added once we import your final job-application version.</p><div class="actions"><a class="btn primary" href="#">PDF coming in launch pass</a><a class="btn" href="/contact/">Professional Links</a></div></div></section><section class="section"><div class="container grid-2"><div class="card"><h3>Current Role</h3><p>Lecturer and Head of ICT, British International College, Krirk University.</p></div><div class="card"><h3>Core Areas</h3><p>Requirements Engineering, NLP, Machine Learning, Software Engineering, AI and computing education.</p></div></div></section></main><footer class="footer"><div class="container footer-grid"><div><strong>Dr. Rahat Izhar</strong></div><div class="footer-links"><a href="/research/">Research</a><a href="/teaching/">Teaching</a></div></div></footer><script src="/assets/js/main.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Academic CV of Dr. Rahat Izhar — Lecturer and Head of ICT, with work across Software Engineering, Artificial Intelligence, computing education, research supervision and academic leadership.">
+  <title>CV | Dr. Rahat Izhar</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .profile-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+    .profile-stat{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+    .profile-stat b{display:block;font-size:18px;letter-spacing:-.02em;margin-bottom:5px}
+    .profile-stat span{font-size:12px;color:var(--muted)}
+
+    .summary-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:18px;align-items:start}
+    .focus-list{display:grid;gap:10px;margin:16px 0 0;padding:0;list-style:none}
+    .focus-list li{padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:var(--surface-2);color:var(--muted)}
+
+    .timeline{display:grid;gap:14px}
+    .timeline-item{display:grid;grid-template-columns:150px 1fr;gap:22px;padding:22px;border:1px solid var(--line);border-radius:20px;background:var(--surface)}
+    .timeline-date{font-size:12px;font-weight:900;color:var(--brand);letter-spacing:.05em;text-transform:uppercase}
+    .timeline-item h3{font-size:21px;margin:0 0 4px}
+    .timeline-org{font-weight:750;margin-bottom:8px}
+    .timeline-item p{color:var(--muted);margin:0}
+    .timeline-item ul{margin:10px 0 0;padding-left:18px;color:var(--muted)}
+    .timeline-item li{margin:6px 0}
+
+    .education-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .education-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:24px}
+    .education-card h3{font-size:21px;margin:0 0 5px}
+    .education-card .degree-meta{font-size:13px;color:var(--brand);font-weight:800;margin-bottom:10px}
+    .education-card p{margin:0;color:var(--muted)}
+
+    .breadth-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .breadth-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:21px}
+    .breadth-card h3{font-size:19px;margin:0 0 8px}
+    .breadth-card p{margin:0;color:var(--muted)}
+
+    .research-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .research-card{background:linear-gradient(135deg,var(--surface),color-mix(in srgb,var(--brand) 5%,var(--surface)));border:1px solid var(--line);border-radius:22px;padding:24px}
+    .research-card h3{font-size:21px;margin:0 0 8px}
+    .research-card p{margin:0;color:var(--muted)}
+
+    .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
+    .service-card h3{font-size:20px;margin:0 0 8px}
+    .service-card p{margin:0;color:var(--muted)}
+
+    .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .skills-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
+    .skills-card h3{font-size:20px;margin:0 0 9px}
+    .skill-cloud{display:flex;flex-wrap:wrap;gap:8px}
+    .skill-cloud span{padding:7px 9px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);font-size:11px;font-weight:800;color:var(--muted)}
+
+    .links-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+    .profile-link{display:block;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:17px;padding:17px;text-align:center;font-weight:800;color:inherit}
+    .profile-link span{display:block;color:var(--muted);font-size:11px;font-weight:600;margin-top:3px}
+
+    @media(max-width:1050px){
+      .breadth-grid{grid-template-columns:repeat(2,1fr)}
+      .links-grid{grid-template-columns:repeat(3,1fr)}
+    }
+    @media(max-width:900px){
+      .profile-stats{grid-template-columns:repeat(2,1fr)}
+      .summary-grid,.research-grid{grid-template-columns:1fr}
+      .education-grid,.service-grid,.skills-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:650px){
+      .timeline-item{grid-template-columns:1fr}
+      .breadth-grid,.links-grid,.profile-stats{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="/"><span class="brand-mark">RI</span><span>Dr. Rahat Izhar</span></a>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/research/">Research</a>
+      <a href="/publications/">Publications</a>
+      <a href="/teaching/">Teaching</a>
+      <a href="/supervision/">Supervision</a>
+      <a href="/leadership-service/">Leadership & Service</a>
+      <a class="active" href="/cv/">CV</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle theme">☾</button>
+      <button class="menu-btn" data-menu-toggle aria-label="Open menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Curriculum Vitae · Academic Profile</span>
+    <h1>Dr. Rahat Izhar</h1>
+    <p>Lecturer and Head of ICT with an interdisciplinary academic profile spanning Software Engineering, Artificial Intelligence, intelligent systems, computing education, research supervision and academic leadership. My work combines research, teaching and programme development with a continuing interest in reliable, practical and interdisciplinary AI.</p>
+
+    <div class="profile-stats">
+      <div class="profile-stat"><b>Computer Engineering Ph.D.</b><span>Chiang Mai University</span></div>
+      <div class="profile-stat"><b>Lecturer & Head of ICT</b><span>British International College · Krirk University</span></div>
+      <div class="profile-stat"><b>UG & Graduate Teaching</b><span>Programming · systems · AI · data · business IS</span></div>
+      <div class="profile-stat"><b>Research & Service</b><span>Publications · supervision · peer review · outreach</span></div>
+    </div>
+
+    <div class="actions" style="margin-top:22px">
+      <a class="btn primary" href="/publications/">Publications</a>
+      <a class="btn" href="/research/">Research</a>
+      <a class="btn" href="/contact/">Contact</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container summary-grid">
+    <article class="card">
+      <span class="card-kicker">Academic Profile</span>
+      <h2>Software Engineering, AI and computing education</h2>
+      <p>My academic work sits at the intersection of Software Engineering and Artificial Intelligence. Requirements Engineering and NLP form an important part of my research foundation, while my broader work extends into software analytics, trustworthy machine learning, computer vision, applied intelligent systems and interdisciplinary AI. Alongside research, I teach across core computing subjects and contribute to programme leadership, curriculum quality, supervision and scholarly service.</p>
+    </article>
+
+    <article class="card">
+      <span class="card-kicker">Profile at a Glance</span>
+      <ul class="focus-list">
+        <li>Research across Software Engineering, AI, NLP/LLMs and trustworthy intelligent systems.</li>
+        <li>Broad undergraduate and MBA-level computing teaching.</li>
+        <li>Department-level academic leadership and programme quality assurance.</li>
+        <li>Student project and postdoctoral research supervision.</li>
+        <li>International peer review, invited talks, conference and outreach engagement.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Academic Appointments & Leadership</span>
+        <h2>Current university roles</h2>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <article class="timeline-item">
+        <div class="timeline-date">Jun 2026 — Present</div>
+        <div>
+          <h3>Head of ICT Department</h3>
+          <div class="timeline-org">British International College · Krirk University · Bangkok, Thailand</div>
+          <p>Lead and support ICT programme delivery across curriculum implementation, faculty coordination, assessment quality, student progression and continuous programme improvement.</p>
+          <ul>
+            <li>Programme coordination, curriculum review and implementation.</li>
+            <li>Assessment alignment, examination moderation and academic quality processes.</li>
+            <li>Faculty support, programme documentation and continuous-improvement activities.</li>
+            <li>Student projects, internships, professional preparation and programme engagement.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-date">Aug 2024 — Present</div>
+        <div>
+          <h3>Lecturer</h3>
+          <div class="timeline-org">British International College · Krirk University · Bangkok, Thailand</div>
+          <p>Teach computing and Information Systems subjects across undergraduate and graduate programmes, combining conceptual explanation with practical, project-based and analytical learning.</p>
+          <ul>
+            <li>Design course structures, lecture materials, practical exercises and outcome-aligned assessment.</li>
+            <li>Teach programming, software development, algorithms, networks, web technologies, AI/IoT, systems analysis, data science and MBA Information Systems.</li>
+            <li>Support student projects, academic development and research-oriented learning.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Education</span>
+        <h2>Academic foundation</h2>
+      </div>
+    </div>
+
+    <div class="education-grid">
+      <article class="education-card">
+        <span class="card-kicker">Doctorate</span>
+        <h3>Ph.D. in Computer Engineering</h3>
+        <div class="degree-meta">Chiang Mai University · Thailand · 2021–2025</div>
+        <p>Doctoral research focused on AI/NLP-enabled Requirements Engineering in Agile software development, including classification, ambiguity analysis, semantic relationships, traceability and prioritization. Recipient of the CMU Presidential Scholarship.</p>
+      </article>
+
+      <article class="education-card">
+        <span class="card-kicker">Master's</span>
+        <h3>M.S. in Software Engineering</h3>
+        <div class="degree-meta">Bahria University · Pakistan · 2017–2019</div>
+        <p>Graduate study across Requirements Engineering, software testing and quality, software metrics, databases, project management and object-oriented software design, with research on ERP requirements and customization.</p>
+      </article>
+
+      <article class="education-card">
+        <span class="card-kicker">Bachelor's</span>
+        <h3>B.S. in Computer Science</h3>
+        <div class="degree-meta">SZABIST · Pakistan · 2012–2016</div>
+        <p>Computer Science foundation spanning programming, software development and information technologies, including a final-year intelligent job-recommendation system with web/backend and Android components.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Research & Scholarship</span>
+        <h2>A broad research programme across software and intelligent systems</h2>
+        <p class="section-lead">Requirements Engineering remains a core research foundation, while current and emerging work extends into broader Software Engineering, AI and interdisciplinary intelligent systems.</p>
+      </div>
+    </div>
+
+    <div class="research-grid">
+      <article class="research-card">
+        <span class="card-kicker">Software Engineering</span>
+        <h3>Requirements intelligence, software analytics & quality</h3>
+        <p>Research includes natural-language requirements analysis, ambiguity detection, semantic grouping, traceability, prioritization, software-quality prediction and empirical evaluation of software data.</p>
+      </article>
+
+      <article class="research-card">
+        <span class="card-kicker">AI & Language Intelligence</span>
+        <h3>NLP, machine learning and LLM-enabled systems</h3>
+        <p>Work with semantic representations, classification, similarity analysis, language models and learning-based methods for text, software artefacts and intelligent decision support.</p>
+      </article>
+
+      <article class="research-card">
+        <span class="card-kicker">Trustworthy AI</span>
+        <h3>Robustness, explainability and generalization</h3>
+        <p>Research interests include model robustness, explainability, ablation, generalization testing, metamorphic testing, reproducible experimentation and failure analysis.</p>
+      </article>
+
+      <article class="research-card">
+        <span class="card-kicker">Applied Intelligent Systems</span>
+        <h3>Healthcare, agriculture and operational decision support</h3>
+        <p>Interdisciplinary work extends into medical imaging, agricultural AI and predictive decision-support settings where reliability and interpretation matter alongside predictive performance.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Teaching Portfolio</span>
+        <h2>Broad computing and Information Systems teaching</h2>
+        <p class="section-lead">My teaching spans foundational programming through applied AI, data, software, systems and graduate business Information Systems.</p>
+      </div>
+    </div>
+
+    <div class="breadth-grid">
+      <article class="breadth-card">
+        <h3>Programming & Software</h3>
+        <p>Basic Programming, Object-Oriented Programming and Web Design & Development.</p>
+      </article>
+      <article class="breadth-card">
+        <h3>Algorithms & Systems</h3>
+        <p>Data Structures & Algorithms and Computer Networks.</p>
+      </article>
+      <article class="breadth-card">
+        <h3>AI & Data</h3>
+        <p>AI & IoT and Fundamentals of Data Science & Data Analytics.</p>
+      </article>
+      <article class="breadth-card">
+        <h3>Information Systems</h3>
+        <p>Information Systems Analysis & Design and MBA Information Systems for Business Management.</p>
+      </article>
+    </div>
+
+    <div class="actions" style="margin-top:22px">
+      <a class="btn primary" href="/teaching/">View Teaching Portfolio</a>
+    </div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Supervision & Academic Service</span>
+        <h2>Research mentoring and scholarly contribution</h2>
+      </div>
+    </div>
+
+    <div class="service-grid">
+      <article class="service-card">
+        <span class="card-kicker">Supervision</span>
+        <h3>Research and project mentoring</h3>
+        <p>Supervision and mentoring across undergraduate projects and current postdoctoral research, with emphasis on clear questions, reproducible experiments, robust evaluation and publication development.</p>
+      </article>
+
+      <article class="service-card">
+        <span class="card-kicker">Peer Review</span>
+        <h3>Journal & conference service</h3>
+        <p>Peer-review activity across international Software Engineering, AI and computing venues, contributing to research quality and scholarly communication.</p>
+      </article>
+
+      <article class="service-card">
+        <span class="card-kicker">Academic Engagement</span>
+        <h3>Invited talks & conference service</h3>
+        <p>International invited talks, research presentations, conference service, student competition mentoring and cross-institutional academic engagement.</p>
+      </article>
+    </div>
+
+    <div class="actions" style="margin-top:22px">
+      <a class="btn primary" href="/supervision/">Supervision</a>
+      <a class="btn" href="/leadership-service/">Leadership & Service</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Earlier Academic & Industry Experience</span>
+        <h2>Experience before the current university appointment</h2>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <article class="timeline-item">
+        <div class="timeline-date">2019 — 2021</div>
+        <div>
+          <h3>English / Computing / Mathematics Teacher</h3>
+          <div class="timeline-org">Laohajit Wittaya School · Lamphun, Thailand</div>
+          <p>Taught across varied learner levels and developed classroom experience in international and hybrid learning environments.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-date">2017 — 2019</div>
+        <div>
+          <h3>Teaching & Research Assistant</h3>
+          <div class="timeline-org">Bahria University · Islamabad, Pakistan</div>
+          <p>Supported Software Engineering, programming and Web Engineering teaching while contributing to research in ERP customization and requirements elicitation.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-date">2017 — 2018</div>
+        <div>
+          <h3>Business Analyst</h3>
+          <div class="timeline-org">4SGlobal Pvt. Ltd. · Islamabad, Pakistan</div>
+          <p>Analysed business workflows, translated stakeholder needs into technical specifications and contributed to ERP modules, dashboards and decision-support reporting.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-date">2015 — 2017</div>
+        <div>
+          <h3>Software, Web & Data Experience</h3>
+          <div class="timeline-org">SyntecX · CMPAK Zong HQ · Zarai Taraqiati Bank Ltd. · Pakistan</div>
+          <p>Early professional experience across web/application development, APIs, BI/data warehousing, Oracle/Teradata reporting, C#/.NET development and database-supported applications.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Technical & Research Competencies</span>
+        <h2>Methods, technologies and academic practice</h2>
+      </div>
+    </div>
+
+    <div class="skills-grid">
+      <article class="skills-card">
+        <h3>AI, Data & Research</h3>
+        <div class="skill-cloud">
+          <span>Python</span><span>Machine Learning</span><span>NLP</span><span>Transformers</span>
+          <span>Semantic Similarity</span><span>scikit-learn</span><span>Pandas</span><span>NumPy</span>
+          <span>Explainable AI</span><span>Robustness Evaluation</span>
+        </div>
+      </article>
+
+      <article class="skills-card">
+        <h3>Software & Systems</h3>
+        <div class="skill-cloud">
+          <span>Software Engineering</span><span>Requirements Engineering</span><span>SDLC</span>
+          <span>Software Testing</span><span>System Analysis</span><span>Java</span><span>C/C++</span>
+          <span>JavaScript</span><span>PHP</span><span>C#</span><span>SQL</span>
+        </div>
+      </article>
+
+      <article class="skills-card">
+        <h3>Academic Practice</h3>
+        <div class="skill-cloud">
+          <span>Curriculum Design</span><span>Assessment</span><span>Quality Assurance</span>
+          <span>Supervision</span><span>Peer Review</span><span>Research Writing</span>
+          <span>Academic Leadership</span><span>International Teaching</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Professional Profiles</span>
+        <h2>Research and academic links</h2>
+      </div>
+    </div>
+
+    <div class="links-grid">
+      <a class="profile-link" href="https://scholar.google.com/citations?user=z8bq6l8AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar<span>Publications & citations</span></a>
+      <a class="profile-link" href="https://orcid.org/0000-0001-9573-4012" target="_blank" rel="noopener">ORCID<span>Research identity</span></a>
+      <a class="profile-link" href="https://dblp.org/pid/387/0380.html" target="_blank" rel="noopener">DBLP<span>Computer Science record</span></a>
+      <a class="profile-link" href="https://github.com/rahat-23" target="_blank" rel="noopener">GitHub<span>Code & repositories</span></a>
+      <a class="profile-link" href="https://th.linkedin.com/in/rahat-izhar-phd-28a61b76" target="_blank" rel="noopener">LinkedIn<span>Professional profile</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="connect-card">
+      <div>
+        <span class="section-kicker">Academic Portfolio</span>
+        <h2>Explore the full profile</h2>
+        <p class="section-lead">Detailed research, publications, teaching, supervision and academic service are available across the portfolio.</p>
+      </div>
+      <div class="connect-actions">
+        <a class="btn primary" href="/research/">Research</a>
+        <a class="btn" href="/publications/">Publications</a>
+        <a class="btn" href="/teaching/">Teaching</a>
+        <a class="btn" href="/contact/">Contact</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>Dr. Rahat Izhar</strong>
+      <p>Academic portfolio · Teaching · Research · Supervision · Leadership</p>
+    </div>
+    <div class="footer-links">
+      <a href="/about/">About</a>
+      <a href="/research/">Research</a>
+      <a href="/publications/">Publications</a>
+      <a href="/contact/">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
