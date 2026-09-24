@@ -3,25 +3,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Basic Programming / Introduction to Programming course page by Dr. Rahat Izhar — actual 16-week teaching sequence, learning outcomes and selected resources.">
-  <title>Basic Programming | Teaching | Dr. Rahat Izhar</title>
+  <meta name="description" content="Basic Programming teaching portfolio of Dr. Rahat Izhar — Python foundations, computational thinking, live coding and introductory data structures.">
+  <title>Basic Programming | Dr. Rahat Izhar</title>
   <link rel="stylesheet" href="/assets/css/style.css">
   <style>
-    .course-overview{display:grid;grid-template-columns:1.15fr .85fr;gap:18px;align-items:start}
+    .profile-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+    .profile-stat{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+    .profile-stat b{display:block;font-size:18px;letter-spacing:-.02em;margin-bottom:5px}
+    .profile-stat span{font-size:12px;color:var(--muted)}
+    .course-overview{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:start}
     .outcome-list{display:grid;gap:10px;margin:16px 0 0;padding:0;list-style:none}
     .outcome-list li{padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:var(--surface-2);color:var(--muted)}
-    .topic-cloud{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+    .topic-cloud{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
     .topic-pill{padding:7px 10px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);font-size:12px;font-weight:750;color:var(--muted)}
-    .course-nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
-    .resource.disabled{opacity:.72;border-style:dashed}
-    .resource-note{margin-top:22px}
-    .assessment-row{background:color-mix(in srgb,var(--brand) 5%,var(--surface))}
-    .assessment-label{display:inline-flex;padding:6px 9px;border-radius:999px;background:var(--surface-2);color:var(--brand);font-size:11px;font-weight:850;text-transform:uppercase;letter-spacing:.05em}
-    .tool-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
-    .tool-box{padding:15px;border:1px solid var(--line);border-radius:14px;background:var(--surface-2)}
-    .tool-box b{display:block;font-size:14px;margin-bottom:3px}.tool-box span{font-size:12px;color:var(--muted)}
-    @media(max-width:850px){.course-overview{grid-template-columns:1fr}.tool-grid{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:520px){.tool-grid{grid-template-columns:1fr}}
+    .phase-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .phase-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:24px;position:relative;overflow:hidden}
+    .phase-no{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:11px;background:var(--surface-2);color:var(--brand);font-weight:900;font-size:13px;margin-bottom:16px}
+    .phase-card h3{margin:0 0 8px;font-size:22px;letter-spacing:-.025em}
+    .phase-card p{margin:0 0 15px;color:var(--muted)}
+    .phase-list{margin:0;padding-left:18px;color:var(--muted)}
+    .phase-list li{margin:7px 0}
+    .approach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .approach-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
+    .approach-card .step{font-size:11px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--brand);margin-bottom:8px}
+    .approach-card h3{margin:0 0 8px;font-size:20px}
+    .approach-card p{margin:0;color:var(--muted)}
+    .practice-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .practice-card{background:linear-gradient(135deg,var(--surface),color-mix(in srgb,var(--brand) 5%,var(--surface)));border:1px solid var(--line);border-radius:22px;padding:24px}
+    .practice-card h3{font-size:22px;margin:0 0 8px}
+    .practice-card p{color:var(--muted);margin:0 0 14px}
+    .practice-focus{display:flex;flex-wrap:wrap;gap:8px}
+    .practice-focus span{padding:6px 9px;border-radius:999px;background:var(--surface-2);font-size:11px;font-weight:800;color:var(--muted)}
+    .tool-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .tool-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px}
+    .tool-card b{display:block;margin-bottom:6px}
+    .tool-card span{font-size:13px;color:var(--muted)}
+    .resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .resource-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
+    .resource-card h3{font-size:19px;margin:0 0 7px}
+    .resource-card p{margin:0;color:var(--muted)}
+    @media(max-width:900px){
+      .profile-stats,.tool-grid{grid-template-columns:repeat(2,1fr)}
+      .course-overview,.phase-grid{grid-template-columns:1fr}
+      .approach-grid,.resource-grid{grid-template-columns:1fr}
+      .practice-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:520px){.profile-stats,.tool-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -49,23 +76,15 @@
 <main>
 <section class="page-hero">
   <div class="container">
-    <span class="eyebrow">Programming Foundations</span>
+    <span class="eyebrow">Teaching Portfolio · Programming Foundations</span>
     <h1>Basic Programming</h1>
-    <p>An introductory Python course focused on logical thinking, problem solving and understanding how computers execute programs. The course moves from computing fundamentals and data representation into Python syntax, functions, control flow and introductory data structures.</p>
+    <p>An introductory Python course designed to build computational thinking, problem-solving ability and a clear understanding of how programs execute. My teaching moves from computing fundamentals and data representation to structured Python programming and introductory data structures.</p>
 
-    <div class="course-meta">
-      <span class="meta-pill">Undergraduate</span>
-      <span class="meta-pill">16 Weeks</span>
-      <span class="meta-pill">3 Hours / Week</span>
-      <span class="meta-pill">Python</span>
-      <span class="meta-pill">Live Coding</span>
-      <span class="meta-pill">Practical Exercises</span>
-    </div>
-
-    <div class="course-nav">
-      <a class="btn primary" href="#weekly-plan">Weekly Plan</a>
-      <a class="btn" href="#outcomes">Learning Outcomes</a>
-      <a class="btn" href="/teaching/">All Courses</a>
+    <div class="profile-stats">
+      <div class="profile-stat"><b>Python</b><span>Primary programming language</span></div>
+      <div class="profile-stat"><b>Computational Thinking</b><span>Logic · decomposition · problem solving</span></div>
+      <div class="profile-stat"><b>Live Coding</b><span>Concepts translated directly into programs</span></div>
+      <div class="profile-stat"><b>Data Structures</b><span>Linear and non-linear foundations</span></div>
     </div>
   </div>
 </section>
@@ -73,9 +92,9 @@
 <section class="section">
   <div class="container course-overview">
     <article class="card">
-      <span class="card-kicker">Course Overview</span>
-      <h3>From computing fundamentals to structured Python programming</h3>
-      <p>The course begins with what programming is, how computers represent information, the history and evolution of programming languages, and the role of high-level languages. Students then learn Python through variables, data types, functions, scope, conditions, loops, functional constructs and introductory data structures.</p>
+      <span class="card-kicker">Course Identity</span>
+      <h2>Teaching programming as a way of thinking</h2>
+      <p>The course introduces programming from first principles. Students begin with how computers represent and execute information, how programming languages developed, and why high-level languages matter. The course then builds practical Python skills through variables, data types, functions, control flow and structured problem solving before introducing fundamental data structures.</p>
 
       <div class="topic-cloud">
         <span class="topic-pill">Programming Concepts</span>
@@ -84,146 +103,203 @@
         <span class="topic-pill">Python</span>
         <span class="topic-pill">Variables</span>
         <span class="topic-pill">Data Types</span>
+        <span class="topic-pill">Strings</span>
         <span class="topic-pill">Functions</span>
         <span class="topic-pill">Scope</span>
         <span class="topic-pill">Conditions</span>
         <span class="topic-pill">For & While Loops</span>
         <span class="topic-pill">Lambda / map / filter</span>
         <span class="topic-pill">Linear Data Structures</span>
-        <span class="topic-pill">Trees / Tries / Graphs</span>
-      </div>
-
-      <div class="tool-grid">
-        <div class="tool-box"><b>Python</b><span>Primary programming language</span></div>
-        <div class="tool-box"><b>PyCharm</b><span>IDE for coding and debugging</span></div>
-        <div class="tool-box"><b>VS Code</b><span>Lightweight development environment</span></div>
-        <div class="tool-box"><b>IDLE / Online Tools</b><span>Beginner practice and quick testing</span></div>
+        <span class="topic-pill">Trees · Tries · Graphs</span>
       </div>
     </article>
 
-    <article class="card" id="outcomes">
-      <span class="card-kicker">Course Objectives</span>
-      <h3>After completing the course, students should be able to:</h3>
+    <article class="card">
+      <span class="card-kicker">Learning Outcomes</span>
+      <h3>Students are guided to:</h3>
       <ul class="outcome-list">
-        <li>Understand how computers process data.</li>
+        <li>Understand how computers process and represent data.</li>
         <li>Explain basic programming concepts and terminology.</li>
         <li>Develop logical and algorithmic thinking.</li>
-        <li>Write simple and structured programs using Python.</li>
+        <li>Write simple, structured programs using Python.</li>
       </ul>
     </article>
   </div>
 </section>
 
-<section class="section band" id="weekly-plan">
+<section class="section band">
   <div class="container">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Actual Teaching Sequence</span>
-        <h2>16-week teaching map</h2>
-        <p class="section-lead">This sequence follows the lecture materials used in the course. Public resource links will be activated as selected slides are converted to watermarked PDFs.</p>
+        <span class="section-kicker">Teaching Approach</span>
+        <h2>Explain → code → practise</h2>
+        <p class="section-lead">The course is taught through short conceptual explanations, live Python demonstrations and guided programming practice so that students move quickly from understanding an idea to using it.</p>
       </div>
     </div>
 
-    <div class="week-table">
-      <div class="week-row">
-        <div class="week-num">Week 1</div>
-        <div class="week-topic">Programming fundamentals: what programming is, key concepts, binary and bytes, text representation, history of computing, evolution of programming languages and high-level languages</div>
-        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span></div>
-      </div>
+    <div class="approach-grid">
+      <article class="approach-card">
+        <div class="step">01 · Explain</div>
+        <h3>Start with the computing idea</h3>
+        <p>New topics are introduced through clear definitions, visual examples and links to how computers, programming languages and software actually work.</p>
+      </article>
+      <article class="approach-card">
+        <div class="step">02 · Code</div>
+        <h3>Translate the idea into Python</h3>
+        <p>Live coding demonstrates syntax, execution and debugging while connecting each line of code to the concept being taught.</p>
+      </article>
+      <article class="approach-card">
+        <div class="step">03 · Practise</div>
+        <h3>Strengthen independent problem solving</h3>
+        <p>Guided exercises progress from small tasks to structured problems involving functions, control flow, collections and data structures.</p>
+      </article>
+    </div>
+  </div>
+</section>
 
-      <div class="week-row">
-        <div class="week-num">Week 2</div>
-        <div class="week-topic">From high-level code to execution; compiler / interpreter concepts; IDEs; introduction to Python; strings, comments, variables, assignment, unpacking and print()</div>
-        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div>
-      </div>
-
-      <div class="week-row">
-        <div class="week-num">Week 3</div>
-        <div class="week-topic">Core Python data types: integers, floats and strings; string operations, indexing, slicing and len()</div>
-        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Practice</span></div>
-      </div>
-
-      <div class="week-row">
-        <div class="week-num">Week 4</div>
-        <div class="week-topic">Boolean values and logical operators; truth values, and / or / not, plus practical work with data types and strings</div>
-        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Practice</span></div>
-      </div>
-
-      <div class="week-row">
-        <div class="week-num">Week 5</div>
-        <div class="week-topic">Composite / collection data types: lists, tuples, dictionaries and sets; access, modification and basic operations</div>
-        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Practice</span></div>
-      </div>
-
-      <div class="week-row">
-        <div class="week-num">Week 6</div>
-        <div class="week-topic">Functions in Python: def, parameters, arguments, return values, reusable logic and function execution</div>
-        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div>
-      </div>
-
-      <div class="week-row">
-        <div class="week-num">Week 7</div>
-        <div class="week-topic">Variable scope in functions: local and global variables, the global keyword and practical function-based exercises</div>
-        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div>
-      </div>
-
-      <div class="week-row assessment-row">
-        <div class="week-num">Week 8</div>
-        <div class="week-topic"><span class="assessment-label">Midterm Examination</span></div>
-        <div class="week-res"><span class="resource disabled">No Public Materials</span></div>
-      </div>
-
-      <div class="week-row">
-        <div class="week-num">Week 9</div>
-        <div class="week-topic">Conditional statements: if, elif and else; logical operators, indentation, nested conditions and applied decision-making exercises</div>
-        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div>
-      </div>
-
-      <div class="week-row">
-        <div class="week-num">Week 10</div>
-        <div class="week-topic">User input and type conversion; for loops, range(), break, continue, loop else, nested loops and pass</div>
-        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div>
-      </div>
-
-      <div class="week-row">
-        <div class="week-num">Week 11</div>
-        <div class="week-topic">While loops: loop conditions, choosing while vs for, common mistakes, break, continue, else and f-strings</div>
-        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div>
-      </div>
-
-      <div class="week-row">
-        <div class="week-num">Week 12</div>
-        <div class="week-topic">Applied while-loop patterns: searching, retry logic, loop else, comparison of for and while loops, debugging and class activities</div>
-        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Practice</span></div>
-      </div>
-
-      <div class="week-row">
-        <div class="week-num">Week 13</div>
-        <div class="week-topic">Lambda functions, regular vs anonymous functions, map(), filter() and practice problems</div>
-        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div>
-      </div>
-
-      <div class="week-row">
-        <div class="week-num">Week 14</div>
-        <div class="week-topic">Introduction to data structures: Python lists and NumPy arrays, list vs array, linked lists, stacks and queues</div>
-        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Practice</span></div>
-      </div>
-
-      <div class="week-row">
-        <div class="week-num">Week 15</div>
-        <div class="week-topic">Non-linear data structures: trees, recursion, tries and graphs with practical real-world examples</div>
-        <div class="week-res"><span class="resource disabled">Slides PDF</span><span class="resource disabled">Notes</span><span class="resource disabled">Code</span></div>
-      </div>
-
-      <div class="week-row assessment-row">
-        <div class="week-num">Week 16</div>
-        <div class="week-topic"><span class="assessment-label">Final Examination</span></div>
-        <div class="week-res"><span class="resource disabled">No Public Materials</span></div>
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Curriculum Architecture</span>
+        <h2>Course learning pathway</h2>
+        <p class="section-lead">The public portfolio groups the taught material into four learning phases, showing the academic progression without reproducing internal timetable or assessment details.</p>
       </div>
     </div>
 
-    <div class="callout resource-note">
-      Public materials will be selective. Lecture slides will be converted to watermarked PDFs before publication; notes and code examples may be added where useful. Examinations, answer keys, student submissions and original editable slide decks will remain private.
+    <div class="phase-grid">
+      <article class="phase-card">
+        <div class="phase-no">01</div>
+        <h3>Computing & Programming Foundations</h3>
+        <p>Building the conceptual foundation needed before students begin writing code.</p>
+        <ul class="phase-list">
+          <li>What programming is and how programs solve problems</li>
+          <li>Bits, bytes, binary and data representation</li>
+          <li>Text representation and character encoding</li>
+          <li>History and evolution of computing and programming languages</li>
+          <li>Machine, assembly and high-level languages</li>
+          <li>Compiler, interpreter and code execution concepts</li>
+        </ul>
+      </article>
+
+      <article class="phase-card">
+        <div class="phase-no">02</div>
+        <h3>Python Core</h3>
+        <p>Moving from programming concepts into Python syntax and data manipulation.</p>
+        <ul class="phase-list">
+          <li>Development environments and first Python programs</li>
+          <li>Comments, variables and assignment</li>
+          <li>Integers, floats, strings and Booleans</li>
+          <li>String operations, indexing and slicing</li>
+          <li>Lists, tuples, dictionaries and sets</li>
+          <li>Type awareness and structured data handling</li>
+        </ul>
+      </article>
+
+      <article class="phase-card">
+        <div class="phase-no">03</div>
+        <h3>Structured Programming</h3>
+        <p>Developing reusable logic and program flow for increasingly complex problems.</p>
+        <ul class="phase-list">
+          <li>Functions, parameters and return values</li>
+          <li>Local and global variable scope</li>
+          <li>Conditional statements and logical operators</li>
+          <li>User input and type conversion</li>
+          <li>For loops, while loops and nested iteration</li>
+          <li>Break, continue, loop else and formatted output</li>
+        </ul>
+      </article>
+
+      <article class="phase-card">
+        <div class="phase-no">04</div>
+        <h3>Functional Thinking & Data Structures</h3>
+        <p>Extending core programming into compact functional constructs and foundational data structures.</p>
+        <ul class="phase-list">
+          <li>Lambda functions and anonymous expressions</li>
+          <li><code>map()</code> and <code>filter()</code></li>
+          <li>Python lists and introductory NumPy arrays</li>
+          <li>Linked lists, stacks and queues</li>
+          <li>Trees and recursion</li>
+          <li>Tries, graphs and real-world data-structure examples</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Practice-Led Learning</span>
+        <h2>Building confidence through progressive programming practice</h2>
+        <p class="section-lead">Classroom practice is used to reinforce each topic immediately, helping students connect syntax with reasoning rather than memorising code patterns.</p>
+      </div>
+    </div>
+
+    <div class="practice-grid">
+      <article class="practice-card">
+        <span class="card-kicker">Foundational Practice</span>
+        <h3>Data, strings and program behaviour</h3>
+        <p>Early exercises develop confidence with variables, data types, string manipulation, indexing, slicing and type awareness before students move into program flow.</p>
+        <div class="practice-focus">
+          <span>Variables</span><span>Data Types</span><span>Strings</span><span>Indexing</span><span>Slicing</span>
+        </div>
+      </article>
+
+      <article class="practice-card">
+        <span class="card-kicker">Problem-Solving Practice</span>
+        <h3>From control flow to data structures</h3>
+        <p>Later practice combines functions, conditions, loops and collections before introducing linear and non-linear structures through practical examples.</p>
+        <div class="practice-focus">
+          <span>Functions</span><span>Conditions</span><span>Loops</span><span>Collections</span><span>Data Structures</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Tools & Practice</span>
+        <h2>Programming environment</h2>
+      </div>
+    </div>
+
+    <div class="tool-grid">
+      <article class="tool-card"><b>Python</b><span>Primary language for programming foundations and problem solving.</span></article>
+      <article class="tool-card"><b>PyCharm</b><span>IDE for writing, running, debugging and organizing Python programs.</span></article>
+      <article class="tool-card"><b>VS Code / IDLE</b><span>Supporting environments for coding practice and quick experimentation.</span></article>
+      <article class="tool-card"><b>Online Tools + NumPy</b><span>Quick code testing and an introductory comparison of Python lists and arrays.</span></article>
+    </div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Selected Teaching Resources</span>
+        <h2>Curated materials for public learning</h2>
+        <p class="section-lead">This page is an academic teaching showcase rather than a complete course-management archive. Selected resources will be published progressively after review.</p>
+      </div>
+    </div>
+
+    <div class="resource-grid">
+      <article class="resource-card">
+        <h3>Lecture Slides</h3>
+        <p>Selected lecture decks will be converted to watermarked PDF format before public release.</p>
+      </article>
+      <article class="resource-card">
+        <h3>Code Examples</h3>
+        <p>Selected Python examples may be published to illustrate programming concepts and problem-solving strategies.</p>
+      </article>
+      <article class="resource-card">
+        <h3>Teaching Notes</h3>
+        <p>Concise supporting notes and guides may be added where they improve independent understanding.</p>
+      </article>
     </div>
   </div>
 </section>
@@ -232,9 +308,9 @@
   <div class="container">
     <div class="connect-card">
       <div>
-        <span class="section-kicker">Course Navigation</span>
-        <h2>Continue through the teaching portfolio</h2>
-        <p class="section-lead">Explore related programming and software-development courses.</p>
+        <span class="section-kicker">Teaching Portfolio</span>
+        <h2>Explore related computing courses</h2>
+        <p class="section-lead">Continue through software development, algorithms and other areas of my teaching portfolio.</p>
       </div>
       <div class="connect-actions">
         <a class="btn primary" href="/teaching/oop/">Object-Oriented Programming</a>
@@ -250,11 +326,12 @@
   <div class="container footer-grid">
     <div>
       <strong>Dr. Rahat Izhar</strong>
-      <p>Teaching portfolio · Selected educational resources</p>
+      <p>Academic portfolio · Teaching · Research · Leadership</p>
     </div>
     <div class="footer-links">
-      <a href="/teaching/">All Courses</a>
+      <a href="/teaching/">Teaching</a>
       <a href="/research/">Research</a>
+      <a href="/publications/">Publications</a>
       <a href="/cv/">CV</a>
       <a href="/contact/">Contact</a>
     </div>
