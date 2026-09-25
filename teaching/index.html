@@ -16,8 +16,13 @@
     .course-section-title{margin:42px 0 18px}
     .course-section-title:first-child{margin-top:0}
     .course-card .course-tag{display:inline-flex;margin-top:16px;padding:6px 9px;border-radius:999px;background:var(--surface-2);color:var(--muted);font-size:11px;font-weight:800}
-    @media(max-width:900px){.teaching-summary,.resource-flow{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:560px){.teaching-summary,.resource-flow{grid-template-columns:1fr}}
+    .capability-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .capability-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:24px}
+    .capability-card h3{font-size:20px;margin:8px 0}
+    .capability-card p{margin:0;color:var(--muted);line-height:1.7}
+    .capability-card .course-tag{display:inline-flex;margin-top:16px;padding:6px 9px;border-radius:999px;background:var(--surface-2);color:var(--muted);font-size:11px;font-weight:800}
+    @media(max-width:900px){.teaching-summary,.resource-flow{grid-template-columns:repeat(2,1fr)}.capability-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:560px){.teaching-summary,.resource-flow,.capability-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -215,6 +220,63 @@
         </div>
         <span class="arrow">→</span>
       </a>
+    </div>
+  </div>
+</section>
+
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Additional Teaching Areas</span>
+        <h2>Broader areas I am prepared to teach</h2>
+        <p class="section-lead">These areas extend beyond the courses already taught above and reflect my academic background, research expertise and preparation for additional computing and AI modules.</p>
+      </div>
+    </div>
+
+    <div class="capability-grid">
+      <article class="capability-card">
+        <span class="card-kicker">Machine Learning & Data Mining</span>
+        <h3>Predictive and exploratory modelling</h3>
+        <p>Supervised and unsupervised learning, classification, regression, clustering, ensembles and model evaluation.</p>
+        <span class="course-tag">ML · Data Mining · Predictive Models</span>
+      </article>
+
+      <article class="capability-card">
+        <span class="card-kicker">AI & Deep Learning</span>
+        <h3>Modern intelligent systems</h3>
+        <p>AI foundations, neural networks, deep learning, transfer learning and applied intelligent-system development.</p>
+        <span class="course-tag">AI · Neural Networks · Deep Learning</span>
+      </article>
+
+      <article class="capability-card">
+        <span class="card-kicker">NLP, LLMs & Generative AI</span>
+        <h3>Language-centred AI</h3>
+        <p>Text processing, embeddings, transformers, large language models, prompt engineering and generative-AI applications.</p>
+        <span class="course-tag">NLP · Transformers · LLMs</span>
+      </article>
+
+      <article class="capability-card">
+        <span class="card-kicker">Computer Vision</span>
+        <h3>Image-based intelligent systems</h3>
+        <p>Image classification, CNN foundations, transfer learning and practical visual-intelligence workflows.</p>
+        <span class="course-tag">Vision · CNN · Transfer Learning</span>
+      </article>
+
+      <article class="capability-card">
+        <span class="card-kicker">AI for Software Engineering</span>
+        <h3>Intelligent software development</h3>
+        <p>Requirements Engineering, software analytics, AI-assisted Software Engineering, software quality and empirical evaluation.</p>
+        <span class="course-tag">RE · Software Analytics · AI4SE</span>
+      </article>
+
+      <article class="capability-card">
+        <span class="card-kicker">Emerging Intelligent Technologies</span>
+        <h3>New AI and connected-system topics</h3>
+        <p>Multimodal AI, AI agents, foundation models, edge intelligence and AI-enabled IoT systems.</p>
+        <span class="course-tag">Multimodal AI · Agents · Edge AI</span>
+      </article>
     </div>
   </div>
 </section>

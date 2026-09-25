@@ -44,6 +44,14 @@
     .tool-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px}
     .tool-card b{display:block;margin-bottom:6px}
     .tool-card span{font-size:13px;color:var(--muted)}
+
+    .capability-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .capability-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:24px}
+    .capability-card h3{font-size:20px;margin:8px 0 9px}
+    .capability-card p{margin:0;color:var(--muted);line-height:1.7}
+    .capability-card .cap-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+    .capability-card .cap-tags span{padding:6px 9px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);font-size:11px;font-weight:800;color:var(--muted)}
+
     .resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
     .resource-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
     .resource-card h3{font-size:19px;margin:0 0 7px}
@@ -53,7 +61,7 @@
       .profile-stats,.tool-grid{grid-template-columns:repeat(2,1fr)}
       .course-overview,.phase-grid{grid-template-columns:1fr}
       .phase-card.wide{grid-column:auto}
-      .case-grid,.resource-grid{grid-template-columns:1fr}
+      .case-grid,.resource-grid,.capability-grid{grid-template-columns:1fr}
     }
     @media(max-width:650px){.approach-grid{grid-template-columns:1fr}}
     @media(max-width:520px){.profile-stats,.tool-grid{grid-template-columns:1fr}}
@@ -337,6 +345,75 @@
 </section>
 
 
+
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Extended Teaching Capability</span>
+        <h2>Data Science, Machine Learning & modern predictive modelling</h2>
+        <p class="section-lead">Beyond the completed course content shown above, my wider teaching preparation and research background support additional modules in machine learning, predictive modelling, model evaluation and interpretable data-driven systems.</p>
+      </div>
+    </div>
+
+    <div class="capability-grid">
+      <article class="capability-card">
+        <span class="card-kicker">Supervised Learning</span>
+        <h3>Classification & regression</h3>
+        <p>Teaching the logic behind predictive modelling, feature–target relationships and model selection across common supervised-learning tasks.</p>
+        <div class="cap-tags">
+          <span>Linear Regression</span><span>Logistic Regression</span><span>KNN</span><span>Naive Bayes</span>
+        </div>
+      </article>
+
+      <article class="capability-card">
+        <span class="card-kicker">Tree-Based Models</span>
+        <h3>From decision trees to ensembles</h3>
+        <p>Interpretable tree models and ensemble methods for classification and regression, including the intuition behind bagging and boosting.</p>
+        <div class="cap-tags">
+          <span>Decision Trees</span><span>Random Forest</span><span>Gradient Boosting</span><span>Bagging</span>
+        </div>
+      </article>
+
+      <article class="capability-card">
+        <span class="card-kicker">Modern Classification</span>
+        <h3>High-performance predictive models</h3>
+        <p>Modern classification approaches with emphasis on practical model comparison, parameter choices and data-dependent performance.</p>
+        <div class="cap-tags">
+          <span>SVM</span><span>XGBoost</span><span>LightGBM</span><span>CatBoost</span>
+        </div>
+      </article>
+
+      <article class="capability-card">
+        <span class="card-kicker">Unsupervised Learning</span>
+        <h3>Discovering structure without labels</h3>
+        <p>Clustering and dimensionality-reduction methods for discovering groups, structure and lower-dimensional representations in data.</p>
+        <div class="cap-tags">
+          <span>K-Means</span><span>Hierarchical Clustering</span><span>DBSCAN</span><span>PCA</span>
+        </div>
+      </article>
+
+      <article class="capability-card">
+        <span class="card-kicker">Model Evaluation</span>
+        <h3>Reliable comparison and validation</h3>
+        <p>Moving beyond a single accuracy value through validation strategies, appropriate metrics and careful examination of model behaviour.</p>
+        <div class="cap-tags">
+          <span>Cross-Validation</span><span>Precision</span><span>Recall</span><span>F1</span><span>ROC-AUC</span>
+        </div>
+      </article>
+
+      <article class="capability-card">
+        <span class="card-kicker">Practical & Explainable ML</span>
+        <h3>Building models responsibly</h3>
+        <p>Practical issues that determine whether a machine-learning workflow is meaningful, reproducible and interpretable in real applications.</p>
+        <div class="cap-tags">
+          <span>Class Imbalance</span><span>Hyperparameter Tuning</span><span>Feature Importance</span><span>SHAP</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="container">

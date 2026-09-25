@@ -43,6 +43,14 @@
     .tool-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px}
     .tool-card b{display:block;margin-bottom:6px}
     .tool-card span{font-size:13px;color:var(--muted)}
+
+    .capability-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .capability-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:24px}
+    .capability-card h3{font-size:20px;margin:8px 0 9px}
+    .capability-card p{margin:0;color:var(--muted);line-height:1.7}
+    .capability-card .cap-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+    .capability-card .cap-tags span{padding:6px 9px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);font-size:11px;font-weight:800;color:var(--muted)}
+
     .resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
     .resource-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
     .resource-card h3{font-size:19px;margin:0 0 7px}
@@ -51,7 +59,7 @@
     @media(max-width:900px){
       .profile-stats,.tool-grid{grid-template-columns:repeat(2,1fr)}
       .course-overview,.phase-grid{grid-template-columns:1fr}
-      .applied-grid,.resource-grid{grid-template-columns:1fr}
+      .applied-grid,.resource-grid,.capability-grid{grid-template-columns:1fr}
     }
     @media(max-width:560px){.profile-stats,.tool-grid,.approach-grid{grid-template-columns:1fr}}
   </style>
@@ -313,6 +321,102 @@
 </section>
 
 
+
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Extended AI Teaching Areas</span>
+        <h2>From classical AI to generative and trustworthy intelligent systems</h2>
+        <p class="section-lead">In addition to the AI & IoT course content above, my research profile and teaching preparation support broader modules in modern Artificial Intelligence and emerging intelligent technologies.</p>
+      </div>
+    </div>
+
+    <div class="capability-grid">
+      <article class="capability-card">
+        <span class="card-kicker">Machine Learning</span>
+        <h3>Learning from data</h3>
+        <p>Supervised and unsupervised learning, model training, evaluation and the relationship between data, features and predictive behaviour.</p>
+        <div class="cap-tags">
+          <span>Classification</span><span>Regression</span><span>Clustering</span><span>Model Evaluation</span>
+        </div>
+      </article>
+
+      <article class="capability-card">
+        <span class="card-kicker">Deep Learning</span>
+        <h3>Neural networks & representation learning</h3>
+        <p>Foundations of neural networks and deep-learning architectures with emphasis on how learned representations support intelligent applications.</p>
+        <div class="cap-tags">
+          <span>Neural Networks</span><span>CNNs</span><span>Transfer Learning</span><span>Deep Models</span>
+        </div>
+      </article>
+
+      <article class="capability-card">
+        <span class="card-kicker">NLP & Generative AI</span>
+        <h3>Language intelligence and LLMs</h3>
+        <p>Modern language-processing concepts from text representation and embeddings to transformers, large language models and generative-AI workflows.</p>
+        <div class="cap-tags">
+          <span>NLP</span><span>Embeddings</span><span>Transformers</span><span>LLMs</span><span>Prompt Engineering</span>
+        </div>
+      </article>
+
+      <article class="capability-card">
+        <span class="card-kicker">Computer Vision</span>
+        <h3>Learning from images</h3>
+        <p>Image-based intelligent systems, classification, convolutional networks and transfer-learning workflows for applied visual problems.</p>
+        <div class="cap-tags">
+          <span>Image Classification</span><span>CNNs</span><span>Transfer Learning</span><span>Vision AI</span>
+        </div>
+      </article>
+
+      <article class="capability-card">
+        <span class="card-kicker">Trustworthy AI</span>
+        <h3>Reliable and explainable models</h3>
+        <p>How robustness, explainability, generalization and reproducibility influence whether AI systems can be trusted beyond a single experiment.</p>
+        <div class="cap-tags">
+          <span>Explainable AI</span><span>Robustness</span><span>Generalization</span><span>Reproducibility</span>
+        </div>
+      </article>
+
+      <article class="capability-card">
+        <span class="card-kicker">Emerging AI Systems</span>
+        <h3>New intelligent-system paradigms</h3>
+        <p>Contemporary AI topics that connect foundation models with intelligent applications, connected devices and increasingly autonomous workflows.</p>
+        <div class="cap-tags">
+          <span>Multimodal AI</span><span>AI Agents</span><span>Foundation Models</span><span>Edge AI</span><span>AI + IoT</span>
+        </div>
+      </article>
+
+      <article class="capability-card">
+        <span class="card-kicker">AI for Software Engineering</span>
+        <h3>Intelligence across the software lifecycle</h3>
+        <p>Applying NLP, machine learning and LLM-based methods to requirements, software artefacts, analytics and engineering decision support.</p>
+        <div class="cap-tags">
+          <span>Requirements Intelligence</span><span>Software Analytics</span><span>LLM-Assisted SE</span><span>Quality</span>
+        </div>
+      </article>
+
+      <article class="capability-card">
+        <span class="card-kicker">Intelligent Decision Support</span>
+        <h3>AI for practical decisions</h3>
+        <p>Using predictive and explainable models to support data-informed decisions across operational and interdisciplinary application domains.</p>
+        <div class="cap-tags">
+          <span>Predictive Analytics</span><span>Decision Support</span><span>Applied AI</span><span>Explainability</span>
+        </div>
+      </article>
+
+      <article class="capability-card">
+        <span class="card-kicker">Responsible AI Practice</span>
+        <h3>Using AI critically and responsibly</h3>
+        <p>Critical discussion of limitations, evaluation, bias, reliability, privacy and responsible adoption of AI-enabled systems.</p>
+        <div class="cap-tags">
+          <span>Bias</span><span>Evaluation</span><span>Privacy</span><span>Responsible Use</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="container">
